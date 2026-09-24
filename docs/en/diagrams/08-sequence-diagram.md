@@ -15,7 +15,7 @@
 A sequence diagram shows which objects exchange messages in what **order in time**. Time
 runs from top to bottom; the objects involved stand side by side along the top edge.
 
-It always describes **one concrete run**, not every possible one — typically one use case
+It always describes **one concrete run**, not every possible one, typically one use case
 from the [use case diagram](04-use-case-diagram.md).
 
 ## Elements
@@ -67,10 +67,10 @@ Branches and repetitions sit in a frame with a keyword in the top left corner:
 
 | Keyword | Meaning |
 |---|---|
-| `alt` | Alternative — several sections separated by a dashed line; exactly one runs |
-| `opt` | Optional — the section only runs if the condition holds |
+| `alt` | Alternative: several sections separated by a dashed line; exactly one runs |
+| `opt` | Optional: the section only runs if the condition holds |
 | `loop` | Repetition, often with a range such as `loop [1..n]` |
-| `par` | Parallel — the sections run concurrently |
+| `par` | Parallel: the sections run concurrently |
 | `ref` | Reference to another sequence diagram |
 
 ```mermaid
@@ -100,10 +100,10 @@ sequenceDiagram
 ## What the exam is looking for
 
 - **Order is the vertical axis.** A message higher up happens earlier. Two arrows at the
-  same height do not mean simultaneity — `par` is what says that.
+  same height do not mean simultaneity. That is what `par` says.
 - **Objects, not classes.** The lifeline belongs to `c1:Customer`, not to `Customer`. The
   object name may be omitted (`:Customer`), the colon may not.
-- **Every synchronous message has a reply**, even one that returns nothing — otherwise it
+- **Every synchronous message has a reply**, even one that returns nothing. Otherwise it
   is not visible when the caller continues. For asynchronous messages the reply is
   deliberately absent.
 - **An object may call itself.** The arrow then loops back onto its own lifeline and

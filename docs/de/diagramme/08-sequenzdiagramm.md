@@ -16,7 +16,7 @@ Ein Sequenzdiagramm zeigt, welche Objekte in welcher **zeitlichen Reihenfolge** 
 austauschen. Die Zeit läuft von oben nach unten, die beteiligten Objekte stehen
 nebeneinander am oberen Rand.
 
-Es beschreibt immer **einen konkreten Ablauf**, nicht alle möglichen — typischerweise
+Es beschreibt immer **einen konkreten Ablauf**, nicht alle möglichen, typischerweise
 einen Anwendungsfall aus dem [Anwendungsfalldiagramm](04-anwendungsfalldiagramm.md).
 
 ## Elemente
@@ -69,10 +69,10 @@ oben:
 
 | Schlüsselwort | Bedeutung |
 |---|---|
-| `alt` | Alternative — mehrere Abschnitte, getrennt durch eine gestrichelte Linie; genau einer läuft |
-| `opt` | Optional — der Abschnitt läuft nur, wenn die Bedingung gilt |
+| `alt` | Alternative: mehrere Abschnitte, getrennt durch eine gestrichelte Linie; genau einer läuft |
+| `opt` | Optional: der Abschnitt läuft nur, wenn die Bedingung gilt |
 | `loop` | Wiederholung, oft mit Angabe wie `loop [1..n]` |
-| `par` | Parallel — die Abschnitte laufen nebenläufig |
+| `par` | Parallel: die Abschnitte laufen nebenläufig |
 | `ref` | Verweis auf ein anderes Sequenzdiagramm |
 
 ```mermaid
@@ -102,11 +102,11 @@ sequenceDiagram
 ## Worauf es in der Prüfung ankommt
 
 - **Reihenfolge ist die Senkrechte.** Eine Nachricht weiter oben passiert früher. Zwei
-  Pfeile auf gleicher Höhe bedeuten nicht Gleichzeitigkeit — dafür gibt es `par`.
+  Pfeile auf gleicher Höhe bedeuten nicht Gleichzeitigkeit. Dafür gibt es `par`.
 - **Objekte, keine Klassen.** Die Lebenslinie gehört zu `k1:Kunde`, nicht zu `Kunde`. Der
   Objektname darf fehlen (`:Kunde`), der Doppelpunkt nicht.
 - **Zu jeder synchronen Nachricht gehört eine Antwort**, auch wenn sie nichts
-  zurückgibt — sonst ist nicht erkennbar, wann der Aufrufer weiterläuft. Bei asynchronen
+  zurückgibt. Sonst ist nicht erkennbar, wann der Aufrufer weiterläuft. Bei asynchronen
   Nachrichten fehlt die Antwort gerade absichtlich.
 - **Ein Objekt darf sich selbst aufrufen.** Der Pfeil geht dann auf die eigene Lebenslinie
   zurück und erzeugt einen zweiten Aktivierungsbalken auf dem ersten.

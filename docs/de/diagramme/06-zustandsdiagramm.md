@@ -47,10 +47,10 @@ Ereignis [Bedingung] / Aktion
 
 Alle drei Teile sind einzeln weglassbar:
 
-- **Ereignis** — was von außen passiert, zum Beispiel `bezahlen`
-- **Bedingung** (*Guard*) — muss wahr sein, damit die Transition feuert, zum Beispiel
+- **Ereignis**: was von außen passiert, zum Beispiel `bezahlen`
+- **Bedingung** (*Guard*): muss wahr sein, damit die Transition feuert, zum Beispiel
   `[Betrag vollständig]`
-- **Aktion** — was beim Wechsel ausgeführt wird, zum Beispiel `/ Rechnung erzeugen`
+- **Aktion**: was beim Wechsel ausgeführt wird, zum Beispiel `/ Rechnung erzeugen`
 
 Feuert eine Transition ohne Ereignis, wechselt das Objekt automatisch, sobald es mit dem
 Zustand fertig ist.
@@ -81,13 +81,13 @@ stateDiagram-v2
 
 Zu lesen: eine Bestellung entsteht im Zustand *Angelegt*. Das Ereignis `bezahlen` bringt
 sie nach *Bezahlt*, aber nur wenn der Betrag vollständig ist. Aus *Versandt* führen zwei
-Wege heraus — welcher genommen wird, entscheidet das Ereignis, nicht das Diagramm.
+Wege heraus. Welcher genommen wird, entscheidet das Ereignis, nicht das Diagramm.
 
 ## Worauf es in der Prüfung ankommt
 
 - **Zustände sind Substantive oder Partizipien**, keine Tätigkeiten. *Bezahlt* ist ein
   Zustand, *Bezahlen* wäre eine Aktion und gehört an die Transition.
-- **Genau ein Startzustand.** Endzustände dürfen mehrere sein — oder gar keiner, wenn das
+- **Genau ein Startzustand.** Endzustände dürfen mehrere sein, oder gar keiner, wenn das
   Objekt endlos läuft.
 - **Jeder Zustand muss erreichbar sein**, und aus jedem Zustand außer dem Endzustand muss
   ein Weg herausführen. Ein Zustand ohne ausgehende Transition ist eine Sackgasse und

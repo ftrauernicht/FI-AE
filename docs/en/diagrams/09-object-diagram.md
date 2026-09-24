@@ -31,8 +31,8 @@ diagram, or check whether a given object diagram is consistent with one.
 
 | Element | Notation |
 |---|---|
-| Named object | `c1:Customer` — **underlined** |
-| Anonymous object | `:Customer` — the colon stays |
+| Named object | `c1:Customer`, **underlined** |
+| Anonymous object | `:Customer`, the colon stays |
 | Name only, class unknown | `c1` |
 | Attribute values | in the lower compartment, `name = "Meier"` |
 | Link | line between two objects, without multiplicity |
@@ -40,7 +40,7 @@ diagram, or check whether a given object diagram is consistent with one.
 The **underline** is what distinguishes an object from a class. It is the detail an exam
 uses to see whether the difference has been understood.
 
-An object has **no multiplicities** and **no methods** — it has values. Methods live in
+An object has **no multiplicities** and **no methods**. It has values. Methods live in
 the class.
 
 ## Example
@@ -88,25 +88,25 @@ classDiagram
 ```
 
 Customer `c1` has exactly one order, and that order has two line items. This is consistent
-with the multiplicity `1..*` — it would also be consistent with `2..*`, but not with
+with the multiplicity `1..*`. It would also be consistent with `2..*`, but not with
 `3..*`.
 
 !!! note "About this drawing"
 
     Mermaid has no object diagram of its own; the objects are drawn here as classes with
-    instance names. **In the exam the object name is underlined** (<u>c1 : Customer</u>) —
-    that is the actual difference from a class diagram, and it carries marks.
+    instance names. **In the exam the object name is underlined** (<u>c1 : Customer</u>).
+    That is the actual difference from a class diagram, and it carries marks.
 
 ## When an object diagram contradicts its class diagram
 
 The usual errors that exam tasks ask about:
 
-- **Multiplicity violated** — an order with no line item where `1..*` is required
-- **Link without an association** — two objects are connected whose classes have nothing
+- **Multiplicity violated**: an order with no line item where `1..*` is required
+- **Link without an association**: two objects are connected whose classes have nothing
   to do with each other in the class diagram
-- **Attribute missing or extra** — an object carries a value its class does not define
-- **Wrong type** — `quantity = "two"` where the class says `int`
-- **Composition used more than once** — one part hangs off two wholes, although a
+- **Attribute missing or extra**: an object carries a value its class does not define
+- **Wrong type**: `quantity = "two"` where the class says `int`
+- **Composition used more than once**: one part hangs off two wholes, although a
   composition allows exactly one
 
 ## What the exam is looking for

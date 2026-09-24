@@ -18,8 +18,8 @@ branches, and what may run at the same time.
 It is the UML counterpart to the [flowchart](01-flowchart.md), but it can do two things a
 flowchart cannot:
 
-- **Concurrency** — several steps run in parallel
-- **Responsibility** — swimlanes show who carries out which step
+- **Concurrency**: several steps run in parallel
+- **Responsibility**: swimlanes show who carries out which step
 
 That is why it is used both for program logic and for business processes.
 
@@ -61,19 +61,19 @@ flowchart TD
     J --> Ende
 ```
 
-After approval, *enter it in the calendar* and *notify the applicant* run concurrently —
-neither depends on the other. The flow is only finished when both are done.
+After approval, *enter it in the calendar* and *notify the applicant* run concurrently.
+Neither depends on the other. The flow is only finished when both are done.
 
 !!! note "About this drawing"
 
     Mermaid has no dedicated symbols for fork and join; the empty nodes stand in for
-    them here. **In the exam they are drawn as a thick horizontal bar** — a bar with one
+    them here. **In the exam they are drawn as a thick horizontal bar**. A bar with one
     incoming and several outgoing arrows is a fork, one with several incoming and one
     outgoing arrow is a join.
 
 ## Swimlanes
 
-When the task asks *who* does what, the diagram is divided into lanes — one per role,
+When the task asks *who* does what, the diagram is divided into lanes: one per role,
 department or system. Each action sits in the lane of whoever carries it out. An edge
 crossing a lane boundary is a handover.
 
@@ -97,7 +97,7 @@ crossing a lane boundary is a handover.
 - **Actions are activities**: "check invoice", not "invoice check".
 - **At least two edges leave a decision node**, and their conditions must be mutually
   exclusive and cover every case together. An `[else]` is allowed.
-- **Fork and join come in pairs.** What was forked is joined again — otherwise it is
+- **Fork and join come in pairs.** What was forked is joined again. Otherwise it is
   unclear when the flow ends.
 - **A join waits for all branches, a merge node waits for none.** That is the most common
   mistake: a diamond where a bar belongs.

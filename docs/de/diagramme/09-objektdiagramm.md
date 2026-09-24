@@ -33,8 +33,8 @@ Klassendiagramm passt.
 
 | Element | Notation |
 |---|---|
-| Objekt mit Name | `k1:Kunde` — **unterstrichen** |
-| Objekt ohne Name (anonym) | `:Kunde` — der Doppelpunkt bleibt |
+| Objekt mit Name | `k1:Kunde`, **unterstrichen** |
+| Objekt ohne Name (anonym) | `:Kunde`, der Doppelpunkt bleibt |
 | Nur der Name, Klasse unbekannt | `k1` |
 | Attributwerte | im unteren Fach, `name = "Meier"` |
 | Link | Linie zwischen zwei Objekten, ohne Multiplizität |
@@ -42,7 +42,7 @@ Klassendiagramm passt.
 Der **Unterstrich** unterscheidet ein Objekt von einer Klasse. Er ist das Merkmal, an dem
 in der Prüfung erkannt wird, ob jemand den Unterschied verstanden hat.
 
-Ein Objekt hat **keine Multiplizitäten** und **keine Methoden** — es hat Werte. Methoden
+Ein Objekt hat **keine Multiplizitäten** und **keine Methoden**. Es hat Werte. Methoden
 stehen in der Klasse.
 
 ## Beispiel
@@ -90,27 +90,27 @@ classDiagram
 ```
 
 Kunde `k1` hat genau eine Bestellung, und diese Bestellung hat zwei Positionen. Das ist
-mit der Multiplizität `1..*` verträglich — mit `2..*` wäre es das ebenfalls, mit `3..*`
+mit der Multiplizität `1..*` verträglich. Mit `2..*` wäre es das ebenfalls, mit `3..*`
 nicht mehr.
 
 !!! note "Zur Darstellung"
 
     Mermaid kennt kein eigenes Objektdiagramm; die Objekte sind hier als Klassen mit
     Instanznamen gezeichnet. **In der Prüfung wird der Objektname unterstrichen**
-    (<u>k1 : Kunde</u>) — das ist der eigentliche Unterschied zum Klassendiagramm und
+    (<u>k1 : Kunde</u>). Das ist der eigentliche Unterschied zum Klassendiagramm und
     wird bewertet.
 
 ## Wann ein Objektdiagramm nicht zum Klassendiagramm passt
 
 Die üblichen Fehler, nach denen in Aufgaben gefragt wird:
 
-- **Multiplizität verletzt** — eine Bestellung ohne Position, obwohl `1..*` gefordert ist
-- **Link ohne Assoziation** — zwei Objekte sind verbunden, deren Klassen im
+- **Multiplizität verletzt**: eine Bestellung ohne Position, obwohl `1..*` gefordert ist
+- **Link ohne Assoziation**: zwei Objekte sind verbunden, deren Klassen im
   Klassendiagramm nichts miteinander zu tun haben
-- **Attribut fehlt oder ist zu viel** — ein Objekt hat einen Wert, den seine Klasse gar
+- **Attribut fehlt oder ist zu viel**: ein Objekt hat einen Wert, den seine Klasse gar
   nicht kennt
-- **Falscher Typ** — `menge = "zwei"`, wo `int` steht
-- **Komposition mehrfach belegt** — ein Teil hängt an zwei Ganzen, obwohl eine Komposition
+- **Falscher Typ**: `menge = "zwei"`, wo `int` steht
+- **Komposition mehrfach belegt**: ein Teil hängt an zwei Ganzen, obwohl eine Komposition
   genau ein Ganzes erlaubt
 
 ## Worauf es in der Prüfung ankommt

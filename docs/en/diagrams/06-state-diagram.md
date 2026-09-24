@@ -46,9 +46,9 @@ event [guard] / action
 
 All three parts can be left out individually:
 
-- **Event** — what happens from outside, for example `pay`
-- **Guard** — must be true for the transition to fire, for example `[amount complete]`
-- **Action** — what is executed during the change, for example `/ create invoice`
+- **Event**: what happens from outside, for example `pay`
+- **Guard**: must be true for the transition to fire, for example `[amount complete]`
+- **Action**: what is executed during the change, for example `/ create invoice`
 
 A transition without an event fires as soon as the object is done with the state.
 
@@ -77,14 +77,14 @@ stateDiagram-v2
 ```
 
 Read it like this: an order comes into being as *Created*. The event `pay` moves it to
-*Paid*, but only if the amount is complete. Two ways lead out of *Shipped* — which one is
+*Paid*, but only if the amount is complete. Two ways lead out of *Shipped*. Which one is
 taken is decided by the event, not by the diagram.
 
 ## What the exam is looking for
 
 - **States are nouns or participles**, not activities. *Paid* is a state; *Paying* would
   be an action and belongs on the transition.
-- **Exactly one initial state.** There may be several final states — or none, if the
+- **Exactly one initial state.** There may be several final states, or none, if the
   object runs forever.
 - **Every state must be reachable**, and every state except the final one must have a way
   out. A state without an outgoing transition is a dead end and almost always an error.

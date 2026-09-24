@@ -18,8 +18,8 @@ passieren, wo sich der Weg verzweigt und was gleichzeitig laufen darf.
 Es ist damit das UML-Gegenstück zum [Programmablaufplan](01-programmablaufplan.md), kann
 aber zwei Dinge, die der PAP nicht kann:
 
-- **Nebenläufigkeit** — mehrere Schritte laufen parallel
-- **Zuständigkeit** — Aktivitätsbereiche zeigen, wer welchen Schritt ausführt
+- **Nebenläufigkeit**: mehrere Schritte laufen parallel
+- **Zuständigkeit**: Aktivitätsbereiche zeigen, wer welchen Schritt ausführt
 
 Deshalb wird es sowohl für Programmlogik als auch für Geschäftsprozesse benutzt.
 
@@ -63,19 +63,19 @@ flowchart TD
 ```
 
 Nach der Genehmigung laufen *Kalender eintragen* und *Antragsteller benachrichtigen*
-nebenläufig — sie hängen nicht voneinander ab. Der Ablauf ist erst zu Ende, wenn beide
+nebenläufig. Sie hängen nicht voneinander ab. Der Ablauf ist erst zu Ende, wenn beide
 fertig sind.
 
 !!! note "Zur Darstellung"
 
     Mermaid kennt Gabelung und Vereinigung nicht als eigene Symbole; hier stehen dafür
     die leeren Knoten. **In der Prüfung werden sie als dicker waagerechter Balken
-    gezeichnet** — ein Balken mit einem eingehenden und mehreren ausgehenden Pfeilen ist
+    gezeichnet**. Ein Balken mit einem eingehenden und mehreren ausgehenden Pfeilen ist
     eine Gabelung, mit mehreren eingehenden und einem ausgehenden eine Vereinigung.
 
 ## Aktivitätsbereiche (Swimlanes)
 
-Wenn die Aufgabe fragt, *wer* was tut, wird das Diagramm in Bahnen unterteilt — je Bahn
+Wenn die Aufgabe fragt, *wer* was tut, wird das Diagramm in Bahnen unterteilt: je Bahn
 eine Rolle, eine Abteilung oder ein System. Jede Aktion steht in der Bahn dessen, der sie
 ausführt. Eine Kante über eine Bahngrenze hinweg ist eine Übergabe.
 
@@ -100,7 +100,7 @@ ausführt. Eine Kante über eine Bahngrenze hinweg ist eine Übergabe.
 - **Aus einem Entscheidungsknoten führen mindestens zwei Kanten**, und ihre Bedingungen
   müssen sich ausschließen und zusammen alle Fälle abdecken. Ein `[sonst]` ist erlaubt.
 - **Gabelung und Vereinigung gehören paarweise.** Was gegabelt wurde, wird wieder
-  vereinigt — sonst ist unklar, wann der Ablauf zu Ende ist.
+  vereinigt. Sonst ist unklar, wann der Ablauf zu Ende ist.
 - **Eine Vereinigung wartet auf alle Zweige**, ein Verbindungsknoten (Raute) wartet auf
   keinen. Das ist der häufigste Fehler: eine Raute, wo ein Balken hingehört.
 
