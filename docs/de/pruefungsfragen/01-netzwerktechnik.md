@@ -64,12 +64,12 @@ Merkhilfe: die Einheit verrät die Schicht. Bit → 1, Frame → 2, Paket → 3,
 
 **TCP** ist verbindungsorientiert: Verbindungsaufbau per Drei-Wege-Handschlag,
 Empfangsbestätigungen, Neuübertragung verlorener Segmente, Reihenfolge garantiert. Dafür
-langsamer und mit mehr Overhead. Anwendungsfall: HTTP, E-Mail, Dateiübertragung — überall,
-wo jedes Byte ankommen muss.
+langsamer und mit mehr Overhead. Anwendungsfall: HTTP, E-Mail, Dateiübertragung, überall
+dort, wo jedes Byte ankommen muss.
 
 **UDP** ist verbindungslos: kein Verbindungsaufbau, keine Bestätigung, keine garantierte
 Reihenfolge. Dafür schnell und mit wenig Overhead. Anwendungsfall: DNS-Abfragen,
-Videostreaming, Voice over IP — dort ist ein verlorenes Paket weniger schlimm als eine
+Videostreaming, Voice over IP. Dort ist ein verlorenes Paket weniger schlimm als eine
 Verzögerung durch Neuübertragung.
 
 </details>
@@ -105,7 +105,7 @@ Gesucht ist das kleinste *n* mit 2ⁿ − 2 ≥ 100.
 - 2⁷ − 2 = **126** → reicht
 
 7 Hostbits, also 32 − 7 = **/25**, Maske 255.255.255.128. Damit bleiben 26 Adressen
-ungenutzt — kleiner geht es nicht, weil Präfixe nur in Zweierpotenzen springen.
+ungenutzt. Kleiner geht es nicht, weil Präfixe nur in Zweierpotenzen springen.
 
 </details>
 
@@ -154,7 +154,7 @@ Nach außen tritt das Netz über einen Router mit einer öffentlichen Adresse au
 | RAID 10 | 4 TB | 4 × 2 TB ÷ 2 | 1 Platte je Spiegelpaar |
 
 Faustformel RAID 5: *(n − 1) × Plattengröße*, weil genau eine Platte an Kapazität für die
-Parität draufgeht — verteilt über alle Platten, nicht auf einer eigenen.
+Parität draufgeht, verteilt über alle Platten, nicht auf einer eigenen.
 
 </details>
 
@@ -164,7 +164,7 @@ Parität draufgeht — verteilt über alle Platten, nicht auf einer eigenen.
 <summary>Antwort</summary>
 
 RAID schützt gegen den **Ausfall von Hardware**, nicht gegen Fehler im Inhalt. Alles, was
-geschrieben wird, wird sofort auf alle Platten geschrieben — auch eine versehentliche
+geschrieben wird, wird sofort auf alle Platten geschrieben: auch eine versehentliche
 Löschung, ein fehlerhaftes Programm oder eine Verschlüsselung durch Ransomware.
 
 Ein Backup ist eine Kopie zu einem *früheren Zeitpunkt* an einem *anderen Ort*. RAID
@@ -181,7 +181,7 @@ erfüllt beides nicht.
 entsteht als XOR über die Datenblöcke; damit sie einen Ausfall ausgleichen kann, müssen
 mindestens zwei Datenblöcke plus ein Paritätsblock auf verschiedenen Platten liegen.
 
-Mit zwei Platten wäre die Parität identisch mit dem Datenblock — das wäre RAID 1.
+Mit zwei Platten wäre die Parität identisch mit dem Datenblock. Das wäre RAID 1.
 
 </details>
 
@@ -244,9 +244,9 @@ Ein NAS gibt ein Dateisystem frei, das es selbst verwaltet. Ein SAN liefert rohe
 
 Nein. RAID und die Netzanbindung sind zwei verschiedene Fragen.
 
-**RAID** beschreibt, wie Daten **innerhalb** eines Speichersystems über mehrere Platten verteilt werden — zur Ausfallsicherheit, zur Geschwindigkeit oder zu beidem.
+**RAID** beschreibt, wie Daten **innerhalb** eines Speichersystems über mehrere Platten verteilt werden, zur Ausfallsicherheit, zur Geschwindigkeit oder zu beidem.
 
-**NAS und SAN** beschreiben, wie dieses Speichersystem **im Netz** erreichbar ist — über Dateifreigaben oder als Blockgerät.
+**NAS und SAN** beschreiben, wie dieses Speichersystem **im Netz** erreichbar ist: über Dateifreigaben oder als Blockgerät.
 
 Beides kommt üblicherweise zusammen vor: Ein NAS enthält fast immer selbst einen RAID-Verbund, bleibt aber ein NAS.
 
@@ -257,12 +257,12 @@ Beides kommt üblicherweise zusammen vor: Ein NAS enthält fast immer selbst ein
 <details markdown="1">
 <summary>Antwort</summary>
 
-Beim **aktiven** Monitoring fragt der Überwachungsserver die Systeme in festen Abständen ab — per SNMP, mit einem Prüfskript oder durch einen Verbindungsversuch auf den Port.
+Beim **aktiven** Monitoring fragt der Überwachungsserver die Systeme in festen Abständen ab: per SNMP, mit einem Prüfskript oder durch einen Verbindungsversuch auf den Port.
 
 Beim **passiven** Monitoring melden sich die Systeme selbst, etwa über Syslog oder einen installierten Agenten.
 
 Der praktische Unterschied liegt im Ausfall: Ein aktiver Test merkt, wenn ein System gar nicht mehr antwortet. Eine passive Meldung, die nicht kommt, fällt erst auf, wenn jemand ihr Ausbleiben überwacht.
 
-Zu einer brauchbaren Überwachung gehören außerdem zwei Schwellenwerte — Warnung und kritisch — und ein Verfahren gegen Fehlalarme. Eine Überwachung, die täglich zwanzig Meldungen erzeugt, wird ignoriert.
+Zu einer brauchbaren Überwachung gehören außerdem zwei Schwellenwerte (Warnung und kritisch) und ein Verfahren gegen Fehlalarme. Eine Überwachung, die täglich zwanzig Meldungen erzeugt, wird ignoriert.
 
 </details>

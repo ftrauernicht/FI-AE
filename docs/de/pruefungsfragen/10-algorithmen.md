@@ -23,7 +23,7 @@
 <details markdown="1">
 <summary>Antwort</summary>
 
-Weil Programmablaufplan und Struktogramm aus dem Prüfungskatalog von 2025 offenbar entfernt worden sind — an ihre Stelle treten Pseudocode und das UML-Aktivitätsdiagramm. Woher diese Angabe stammt, steht in [Die Abschlussprüfung im Überblick](../00-pruefung.md); gegen das Original geprüft ist sie nicht.
+Weil Programmablaufplan und Struktogramm aus dem Prüfungskatalog von 2025 offenbar entfernt worden sind. An ihre Stelle treten Pseudocode und das UML-Aktivitätsdiagramm. Woher diese Angabe stammt, steht in [Die Abschlussprüfung im Überblick](../00-pruefung.md); gegen das Original geprüft ist sie nicht.
 
 Unabhängig davon gilt der schlichtere Grund: Wer statt des verlangten Pseudocodes eine andere Darstellung liefert, beantwortet eine andere Frage als die gestellte.
 
@@ -38,7 +38,7 @@ Unabhängig davon gilt der schlichtere Grund: Wer statt des verlangten Pseudocod
 - **Verzweigung** (Selektion) — eine Bedingung entscheidet über den weiteren Weg
 - **Wiederholung** (Iteration) — ein Block läuft mehrfach
 
-Das ist keine Konvention, sondern der Satz von Böhm und Jacopini: Jedes berechenbare Problem lässt sich allein mit diesen drei Bausteinen lösen — ohne Sprunganweisung.
+Das ist keine Konvention, sondern der Satz von Böhm und Jacopini: Jedes berechenbare Problem lässt sich allein mit diesen drei Bausteinen lösen, ohne Sprunganweisung.
 
 </details>
 
@@ -76,7 +76,7 @@ groesstes(feld)
     gib groesstes zurück
 ```
 
-Drei Punkte, an denen die Bewertung hängt: Der Startwert ist **das erste Element**, nicht null — sonst versagt die Funktion bei lauter negativen Zahlen. Die Schleife beginnt bei 1, weil Element 0 schon verglichen wurde. Und der leere Fall ist behandelt.
+Drei Punkte, an denen die Bewertung hängt: Der Startwert ist **das erste Element**, nicht null, sonst versagt die Funktion bei lauter negativen Zahlen. Die Schleife beginnt bei 1, weil Element 0 schon verglichen wurde. Und der leere Fall ist behandelt.
 
 </details>
 
@@ -95,7 +95,7 @@ Die O-Notation beschreibt, wie der Aufwand mit der Eingabegröße *n* wächst. K
 | binäre Suche | O(log n) |
 | Bubblesort | O(n²) |
 
-Gefragt ist damit nicht die tatsächliche Laufzeit, sondern das Wachstum. Ein O(n²)-Verfahren kann bei zehn Elementen schneller sein als ein O(n log n)-Verfahren — bei zehntausend nie.
+Gefragt ist damit nicht die tatsächliche Laufzeit, sondern das Wachstum. Ein O(n²)-Verfahren kann bei zehn Elementen schneller sein als ein O(n log n)-Verfahren; bei zehntausend nie.
 
 </details>
 
@@ -119,7 +119,7 @@ Zu bedenken ist allerdings, dass das Sortieren selbst Aufwand kostet. Für eine 
 <details markdown="1">
 <summary>Antwort</summary>
 
-Ein Fehler, bei dem eine Schleife oder ein Index um genau eins danebenliegt — die klassische Fehlerquelle bei Schleifen.
+Ein Fehler, bei dem eine Schleife oder ein Index um genau eins danebenliegt, die klassische Fehlerquelle bei Schleifen.
 
 ```text
 für i von 0 bis länge(feld) - 1
@@ -155,7 +155,7 @@ Nach jedem Durchlauf steht das größte verbleibende Element endgültig am Ende.
 <details markdown="1">
 <summary>Antwort</summary>
 
-**Selectionsort** sucht je Durchlauf das kleinste Element und tauscht es einmal an seinen Platz: höchstens *n* − 1 Tauschvorgänge. Die Anzahl der Vergleiche ist dagegen fest — auch ein bereits sortiertes Feld wird vollständig durchgesehen.
+**Selectionsort** sucht je Durchlauf das kleinste Element und tauscht es einmal an seinen Platz: höchstens *n* − 1 Tauschvorgänge. Die Anzahl der Vergleiche ist dagegen fest: auch ein bereits sortiertes Feld wird vollständig durchgesehen.
 
 **Insertionsort** schiebt jedes Element so weit nach vorn, bis es passt. Bei fast sortierten Daten bricht die innere Schleife sofort ab, der Aufwand geht gegen O(n); bei absteigend sortierten Daten ist er dagegen am größten.
 
@@ -172,6 +172,6 @@ Stabil heißt: Elemente mit gleichem Sortierschlüssel behalten ihre ursprüngli
 
 Das ist wichtig, sobald nacheinander nach mehreren Kriterien sortiert wird. Wer eine Liste erst nach Vornamen und dann stabil nach Nachnamen sortiert, erhält Nachnamen in Reihenfolge und innerhalb gleicher Nachnamen die Vornamen in Reihenfolge. Mit einem instabilen Verfahren ist die erste Sortierung verloren.
 
-Von den drei elementaren Verfahren sind Bubblesort und Insertionsort stabil, Selectionsort ist es nicht — es tauscht über weite Strecken hinweg und zerreißt dabei die Reihenfolge gleicher Schlüssel.
+Von den drei elementaren Verfahren sind Bubblesort und Insertionsort stabil, Selectionsort ist es nicht; es tauscht über weite Strecken hinweg und zerreißt dabei die Reihenfolge gleicher Schlüssel.
 
 </details>

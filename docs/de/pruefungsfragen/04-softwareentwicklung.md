@@ -50,7 +50,7 @@ beim Client, 5xx Fehler beim Server.
 <summary>Antwort</summary>
 
 **401 Unauthorized** bedeutet: *nicht angemeldet*. Der Server weiß nicht, wer fragt.
-Anmelden kann das Problem lösen. Der Name ist historisch irreführend — gemeint ist
+Anmelden kann das Problem lösen. Der Name ist historisch irreführend: gemeint ist
 Authentifizierung, nicht Autorisierung.
 
 **403 Forbidden** bedeutet: *angemeldet, aber nicht berechtigt*. Der Server weiß, wer
@@ -68,7 +68,7 @@ Weil ihr die Merkmale einer Programmiersprache fehlen: **Variablen**, **Kontroll
 ausschließlich die Struktur eines Dokuments.
 
 HTML ist eine **Auszeichnungssprache** (Markup Language). Zum Vergleich: auch SQL ist
-keine klassische Programmiersprache, sondern eine Abfragesprache — auch wenn die Grenze
+keine klassische Programmiersprache, sondern eine Abfragesprache, auch wenn die Grenze
 dort durch Prozeduren verwischt.
 
 </details>
@@ -88,7 +88,7 @@ dort durch Prozeduren verwischt.
 
 Sicherheitlich wichtig: GET-Parameter landen im Browserverlauf, in Server-Protokolldateien
 und im Referer. Kennwörter gehören deshalb nie in eine GET-Anfrage. Verschlüsselt sind
-beide nur durch HTTPS — POST allein verschlüsselt nichts.
+beide nur durch HTTPS. POST allein verschlüsselt nichts.
 
 </details>
 
@@ -109,7 +109,7 @@ erweitert oder überschreibt sie. Vermeidet doppelten Code und bildet eine
 
 **Polymorphie:** Derselbe Aufruf verhält sich je nach tatsächlichem Objekt
 unterschiedlich. `konto.zinsenBerechnen()` rechnet anders, wenn dahinter ein Sparbuch
-steht als bei einem Girokonto — der aufrufende Code muss den Unterschied nicht kennen.
+steht als bei einem Girokonto; der aufrufende Code muss den Unterschied nicht kennen.
 
 </details>
 
@@ -127,7 +127,7 @@ steht als bei einem Girokonto — der aufrufende Code muss den Unterschied nicht
 
 Faustregel: Eine abstrakte Klasse eignet sich für verwandte Klassen mit gemeinsamem Code.
 Ein Interface eignet sich für eine Fähigkeit, die auch völlig unterschiedliche Klassen
-haben können — `Druckbar`, `Vergleichbar`, `Serialisierbar`.
+haben können: `Druckbar`, `Vergleichbar`, `Serialisierbar`.
 
 </details>
 
@@ -173,7 +173,7 @@ Attribut widerspricht der Kapselung.
 <details markdown="1">
 <summary>Antwort</summary>
 
-**Wasserfall** arbeitet Phasen nacheinander ab — Analyse, Entwurf, Umsetzung, Test,
+**Wasserfall** arbeitet Phasen nacheinander ab: Analyse, Entwurf, Umsetzung, Test,
 Einführung. Jede Phase endet mit einem Ergebnis, das die nächste voraussetzt. Vorteil:
 planbar, gut dokumentiert, feste Kosten. Nachteil: Änderungen sind spät teuer, und der
 Kunde sieht das Ergebnis erst am Ende.
@@ -230,7 +230,7 @@ Die weiteren drei der acht sind Kompatibilität, Sicherheit und Übertragbarkeit
 
 **Black Box:** getestet wird gegen die Spezifikation, ohne Kenntnis des Quelltextes. Eingabe hinein, Ausgabe vergleichen. Verfahren sind Äquivalenzklassenbildung und Grenzwertanalyse.
 
-**White Box:** der Quelltext ist bekannt, getestet wird gegen seine Struktur. Maß ist die Überdeckung — Anweisungs-, Zweig- oder Pfadüberdeckung.
+**White Box:** der Quelltext ist bekannt, getestet wird gegen seine Struktur. Maß ist die Überdeckung: Anweisungs-, Zweig- oder Pfadüberdeckung.
 
 Beide ergänzen sich: Black Box findet fehlende Funktionen, White Box findet nicht erreichbaren oder ungetesteten Code.
 
@@ -241,7 +241,7 @@ Beide ergänzen sich: Black Box findet fehlende Funktionen, White Box findet nic
 <details markdown="1">
 <summary>Antwort</summary>
 
-**0, 1, 100 und 101** — jeweils der Wert direkt außerhalb und direkt innerhalb der Grenze. Häufig werden zusätzlich 2 und 99 geprüft.
+**0, 1, 100 und 101**: jeweils der Wert direkt außerhalb und direkt innerhalb der Grenze. Häufig werden zusätzlich 2 und 99 geprüft.
 
 Nicht geprüft wird 50: Ein Wert aus der Mitte der Äquivalenzklasse bringt keine zusätzliche Erkenntnis.
 
@@ -254,13 +254,13 @@ Begründung: Fehler entstehen an den Rändern, weil dort die Vergleichsoperatore
 <details markdown="1">
 <summary>Antwort</summary>
 
-Der **Lasttest** prüft, ob das System die **erwartete** Last verkraftet — etwa 500 gleichzeitige Nutzer bei vereinbarten Antwortzeiten.
+Der **Lasttest** prüft, ob das System die **erwartete** Last verkraftet, etwa 500 gleichzeitige Nutzer bei vereinbarten Antwortzeiten.
 
 Der **Stresstest** geht bewusst darüber hinaus und sucht die **Grenze**. Interessant ist dabei weniger, wo sie liegt, als was beim Überschreiten passiert: Verweigert das System neue Anfragen geordnet, oder stürzt es ab und verliert Daten?
 
 Verwandt sind der Dauertest über viele Stunden, der schleichende Speicherlecks sichtbar macht, und der Skalierbarkeitstest, der prüft, ob mehr Hardware auch mehr Durchsatz bringt.
 
-Gemessen werden in allen Fällen Antwortzeit, Durchsatz und Fehlerrate — und zwar gegen vorher festgelegte Zielwerte.
+Gemessen werden in allen Fällen Antwortzeit, Durchsatz und Fehlerrate, und zwar gegen vorher festgelegte Zielwerte.
 
 </details>
 
@@ -290,7 +290,7 @@ Ein **Architekturmuster** ordnet das System als Ganzes: Schichtenarchitektur, Mo
 
 Ein **Entwurfsmuster** löst ein Problem innerhalb weniger Klassen: Singleton, Beobachter, Strategie, Fabrikmethode.
 
-Entwurfsmuster werden in drei Gruppen eingeteilt — Erzeugungs-, Struktur- und Verhaltensmuster.
+Entwurfsmuster werden in drei Gruppen eingeteilt: Erzeugungs-, Struktur- und Verhaltensmuster.
 
 </details>
 
@@ -301,7 +301,7 @@ Entwurfsmuster werden in drei Gruppen eingeteilt — Erzeugungs-, Struktur- und 
 
 Das Barrierefreiheitsstärkungsgesetz gilt seit dem **28. Juni 2025**. Dienstleistungen im elektronischen Geschäftsverkehr, die sich an Verbraucher richten, müssen barrierefrei sein; dazu gehört eine veröffentlichte Erklärung zur Barrierefreiheit.
 
-Ausgenommen sind Kleinstunternehmen mit weniger als zehn Beschäftigten und höchstens zwei Millionen Euro Jahresumsatz — allerdings nur bei Dienstleistungen, nicht bei Produkten.
+Ausgenommen sind Kleinstunternehmen mit weniger als zehn Beschäftigten und höchstens zwei Millionen Euro Jahresumsatz, allerdings nur bei Dienstleistungen, nicht bei Produkten.
 
 Technischer Maßstab ist die Norm **EN 301 549**, die für Webinhalte auf die **WCAG 2.1 Stufe AA** verweist. Deren vier Grundsätze: wahrnehmbar, bedienbar, verständlich, robust.
 

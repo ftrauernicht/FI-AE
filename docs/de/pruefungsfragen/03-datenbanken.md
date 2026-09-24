@@ -61,7 +61,7 @@ Artikel(ArtikelNr, Artikelbezeichnung)
 <summary>Antwort</summary>
 
 - **Einfüge-Anomalie:** Ein neuer Artikel lässt sich nicht anlegen, solange er nicht
-  bestellt wurde — weil die Bestellnummer Teil des Schlüssels ist und nicht leer sein darf.
+  bestellt wurde, weil die Bestellnummer Teil des Schlüssels ist und nicht leer sein darf.
 - **Änderungs-Anomalie:** Die Artikelbezeichnung ändert sich und muss in jeder Zeile
   nachgezogen werden. Wird eine übersehen, widerspricht sich die Datenbank.
 - **Lösch-Anomalie:** Mit der letzten Bestellung eines Artikels verschwindet auch die
@@ -80,7 +80,7 @@ Wenn die Lesegeschwindigkeit wichtiger ist als die Redundanzfreiheit. Jede weite
 Normalform bedeutet mehr Tabellen und damit mehr Verbundoperationen (Joins) beim Lesen.
 
 Typische Fälle: Auswertungs- und Berichtsdatenbanken (Data Warehouse), Zwischenspeicher,
-historisierte Daten, bei denen der damalige Wert gerade **nicht** mitwandern soll — etwa
+historisierte Daten, bei denen der damalige Wert gerade **nicht** mitwandern soll, etwa
 der Preis auf einer bereits geschriebenen Rechnung.
 
 Diese bewusste Rücknahme heißt **Denormalisierung**. Sie erkauft Geschwindigkeit mit dem
@@ -96,7 +96,7 @@ Risiko widersprüchlicher Daten.
 <summary>Antwort</summary>
 
 **WHERE** filtert **einzelne Zeilen**, bevor gruppiert wird. **HAVING** filtert
-**Gruppen**, nachdem `GROUP BY` sie gebildet hat — und darf deshalb als einziges mit
+**Gruppen**, nachdem `GROUP BY` sie gebildet hat, und darf deshalb als einziges mit
 Aggregatfunktionen arbeiten.
 
 ```sql
@@ -197,7 +197,7 @@ Belegung(MatrNr, KursNr, Note)      <- Zwischentabelle
 ```
 
 Der Schlüssel der Zwischentabelle ist die Kombination beider Fremdschlüssel. Attribute,
-die zur *Beziehung* gehören und nicht zu einer der beiden Seiten — hier die Note —
+die zur *Beziehung* gehören und nicht zu einer der beiden Seiten (hier die Note)
 gehören genau dorthin.
 
 </details>
@@ -228,7 +228,7 @@ Ein **Primärschlüssel** identifiziert eine Zeile in *seiner eigenen* Tabelle e
 ist eindeutig, nie `NULL` und ändert sich idealerweise nie.
 
 Ein **Fremdschlüssel** verweist auf den Primärschlüssel einer *anderen* Tabelle. Er darf
-mehrfach vorkommen und je nach Modellierung auch `NULL` sein — dann besteht die Beziehung
+mehrfach vorkommen und je nach Modellierung auch `NULL` sein; dann besteht die Beziehung
 für diese Zeile eben nicht.
 
 Der Fremdschlüssel sichert die **referentielle Integrität**: es kann keine Bestellung zu

@@ -132,7 +132,7 @@ zurückrechnen.
 Zum Prüfen genügt das: Das eingegebene Kennwort wird erneut gehasht und mit dem
 gespeicherten Wert verglichen.
 
-Dazu gehört ein **Salt** — ein zufälliger Wert je Benutzer, der vor dem Hashen angehängt
+Dazu gehört ein **Salt**, ein zufälliger Wert je Benutzer, der vor dem Hashen angehängt
 wird. Er verhindert, dass gleiche Kennwörter gleiche Hashes ergeben, und macht vorberechnete
 Tabellen (Rainbow Tables) nutzlos. Verwendet werden bewusst langsame Verfahren wie bcrypt,
 scrypt oder Argon2, nicht MD5 oder SHA-1.
@@ -155,7 +155,7 @@ biometrische Daten, ethnische Herkunft, politische Meinung, religiöse Überzeug
 Gewerkschaftszugehörigkeit, Sexualleben. Ihre Verarbeitung ist grundsätzlich **verboten**
 und nur in engen Ausnahmen erlaubt.
 
-Nicht personenbezogen sind Daten juristischer Personen und **anonymisierte** Daten — bei
+Nicht personenbezogen sind Daten juristischer Personen und **anonymisierte** Daten; bei
 Letzteren muss der Personenbezug allerdings unumkehrbar entfernt sein.
 
 </details>
@@ -169,7 +169,7 @@ Letzteren muss der Personenbezug allerdings unumkehrbar entfernt sein.
 nicht mehr an, weil es keine personenbezogenen Daten mehr sind.
 
 **Pseudonymisierung** ersetzt identifizierende Merkmale durch ein Kennzeichen. Mit einer
-getrennt aufbewahrten Zuordnungstabelle lässt sich der Bezug **wiederherstellen** — die
+getrennt aufbewahrten Zuordnungstabelle lässt sich der Bezug **wiederherstellen**. Die
 Daten bleiben deshalb personenbezogen und fallen weiter unter die DSGVO.
 
 Die DSGVO nennt Pseudonymisierung in Art. 32 ausdrücklich als technische Maßnahme, nicht
@@ -204,7 +204,7 @@ Ein **Informationssicherheits-Managementsystem** ist die Gesamtheit der Verfahre
 Regeln in einer Organisation, mit denen Informationssicherheit festgelegt, gesteuert,
 überwacht, aufrechterhalten und fortlaufend verbessert wird.
 
-Es ist ausdrücklich **kein Produkt**, sondern eine Organisationsaufgabe — Technik ist nur
+Es ist ausdrücklich **kein Produkt**, sondern eine Organisationsaufgabe. Technik ist nur
 ein Teil davon.
 
 Maßgebliche Norm ist **ISO/IEC 27001**; in Deutschland verbreitet ist zusätzlich der
@@ -222,7 +222,7 @@ Verbesserung folgt dem **PDCA-Zyklus**: Plan, Do, Check, Act.
 
 Der Angreifer klinkt sich zwischen zwei Kommunikationspartner und gibt sich gegenüber jedem als der jeweils andere aus. Er kann mitlesen und verändern, ohne bemerkt zu werden. Typische Wege: ein gefälschter WLAN-Zugangspunkt, ARP-Spoofing, ein manipulierter DNS-Eintrag.
 
-Schutz bietet TLS — aber nur zusammen mit der **Prüfung des Zertifikats**. Verschlüsselung allein hilft nicht: Eine sauber verschlüsselte Verbindung zum Angreifer ist genauso wertlos wie eine unverschlüsselte.
+Schutz bietet TLS, aber nur zusammen mit der **Prüfung des Zertifikats**. Verschlüsselung allein hilft nicht: Eine sauber verschlüsselte Verbindung zum Angreifer ist genauso wertlos wie eine unverschlüsselte.
 
 Verletzt werden Vertraulichkeit und Integrität.
 
@@ -241,7 +241,7 @@ SELECT * FROM Benutzer WHERE Name = 'EINGABE';
 SELECT * FROM Benutzer WHERE Name = '' OR '1'='1';
 ```
 
-Wirksamste Gegenmaßnahme sind **vorbereitete Anweisungen mit Platzhaltern**. Der Server kennt die Struktur der Anweisung, bevor er die Werte sieht — ein Wert kann sie danach nicht mehr ändern.
+Wirksamste Gegenmaßnahme sind **vorbereitete Anweisungen mit Platzhaltern**. Der Server kennt die Struktur der Anweisung, bevor er die Werte sieht. Ein Wert kann sie danach nicht mehr ändern.
 
 Ergänzend: Eingaben gegen eine Positivliste prüfen, ein Datenbankkonto mit minimalen Rechten verwenden, Datenbankfehler nicht an den Nutzer durchreichen.
 
@@ -272,7 +272,7 @@ Kurz: XSS bringt Code zum Nutzer, CSRF bringt eine Anfrage zum Server. Bei XSS l
 
 Beide überlasten einen Dienst, bis er für reguläre Nutzer nicht mehr erreichbar ist. Verletzt wird die **Verfügbarkeit**.
 
-Beim **DoS** kommt der Angriff von einer Quelle und lässt sich über deren Adresse sperren. Beim **DDoS** kommen die Anfragen von vielen übernommenen Rechnern gleichzeitig — eine einzelne Sperre hilft nicht mehr.
+Beim **DoS** kommt der Angriff von einer Quelle und lässt sich über deren Adresse sperren. Beim **DDoS** kommen die Anfragen von vielen übernommenen Rechnern gleichzeitig. Eine einzelne Sperre hilft nicht mehr.
 
 Verbreitet ist die Verstärkung: Der Angreifer schickt kleine Anfragen mit gefälschter Absenderadresse an fremde Dienste, deren große Antworten beim Opfer landen.
 
@@ -293,7 +293,7 @@ Gegenmaßnahmen: Begrenzung der Anfragerate, Filter beim Netzbetreiber, Ausliefe
 
 Das **Kennwort wird nie über das Netz übertragen**; es dient nur zum Entschlüsseln der Antwort des KDC.
 
-Die Uhren müssen übereinstimmen, weil Tickets einen Zeitstempel tragen und nur begrenzt gültig sind — das verhindert, dass ein abgefangenes Ticket später wiederverwendet wird. Weichen die Uhren um mehr als die erlaubte Spanne ab, meistens fünf Minuten, schlägt die Anmeldung fehl.
+Die Uhren müssen übereinstimmen, weil Tickets einen Zeitstempel tragen und nur begrenzt gültig sind; das verhindert, dass ein abgefangenes Ticket später wiederverwendet wird. Weichen die Uhren um mehr als die erlaubte Spanne ab, meistens fünf Minuten, schlägt die Anmeldung fehl.
 
 </details>
 
@@ -312,7 +312,7 @@ Die Uhren müssen übereinstimmen, weil Tickets einen Zeitstempel tragen und nur
 
 Die Fristen stehen in § 32 BSIG und laufen ab dem Zeitpunkt, an dem die Einrichtung von dem Vorfall Kenntnis erlangt.
 
-Erfasst sind seit der Neufassung des BSIG nicht mehr nur Betreiber kritischer Anlagen, sondern auch besonders wichtige und wichtige Einrichtungen ab bestimmten Größen. Die Risikomanagementmaßnahmen stehen in § 30 BSIG und nennen zehn Bereiche, darunter Lieferkettensicherheit, Bewältigung von Sicherheitsvorfällen, Kryptografie und Multi-Faktor-Authentifizierung. § 38 nimmt die Geschäftsleitung persönlich in die Pflicht — umsetzen, überwachen, sich schulen lassen.
+Erfasst sind seit der Neufassung des BSIG nicht mehr nur Betreiber kritischer Anlagen, sondern auch besonders wichtige und wichtige Einrichtungen ab bestimmten Größen. Die Risikomanagementmaßnahmen stehen in § 30 BSIG und nennen zehn Bereiche, darunter Lieferkettensicherheit, Bewältigung von Sicherheitsvorfällen, Kryptografie und Multi-Faktor-Authentifizierung. § 38 nimmt die Geschäftsleitung persönlich in die Pflicht: umsetzen, überwachen, sich schulen lassen.
 
 </details>
 

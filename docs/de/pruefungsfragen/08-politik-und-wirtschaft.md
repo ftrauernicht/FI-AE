@@ -47,7 +47,7 @@ Gesellschaft, nicht auf das der Gesellschafter.
 Die Unternehmergesellschaft ist eine **Variante der GmbH** mit erleichterter Gründung: das
 Stammkapital darf bei 1 € beginnen.
 
-Dafür gilt eine Thesaurierungspflicht — **25 % des Jahresüberschusses** müssen in eine
+Dafür gilt eine Thesaurierungspflicht: **25 % des Jahresüberschusses** müssen in eine
 Rücklage eingestellt werden, bis das Stammkapital 25.000 € erreicht. Danach kann sie in
 eine GmbH umfirmieren.
 
@@ -89,7 +89,7 @@ Sie fallen häufig auseinander:
 
 - Eine Maschine für 60.000 € ist **eine** Auszahlung, aber über fünf Jahre je 12.000 €
   **Kosten** (Abschreibung).
-- Kalkulatorische Kosten — etwa der Unternehmerlohn oder Zinsen auf das eigene Kapital —
+- Kalkulatorische Kosten (etwa der Unternehmerlohn oder Zinsen auf das eigene Kapital)
   sind Kosten ohne jede Auszahlung.
 
 In der Prüfung erkennbar an der Frage: „Wann fließt Geld?" gegen „Was wird verbraucht?"
@@ -131,7 +131,7 @@ Käufer; der Gleichgewichtspreis wandert nach unten, die abgesetzte Menge steigt
 Umgekehrt gilt: steigende Nachfrage bei gleichem Angebot treibt den Preis nach oben.
 
 Der **Gleichgewichtspreis** ist der Punkt, an dem sich Angebots- und Nachfragekurve
-schneiden — dort ist die angebotene gleich der nachgefragten Menge.
+schneiden. Dort ist die angebotene gleich der nachgefragten Menge.
 
 </details>
 
@@ -147,7 +147,7 @@ Wichtige Abgrenzungen für die Prüfung:
 - Ein Schaufenster, ein Katalog oder ein Onlineshop sind **kein** Angebot, sondern eine
   Aufforderung zur Abgabe eines Angebots (*invitatio ad offerendum*). Sonst müsste der
   Händler jede Bestellung annehmen, auch über den letzten vorrätigen Artikel hinaus.
-- Der Kunde gibt das Angebot ab, der Händler nimmt es an — meist mit der
+- Der Kunde gibt das Angebot ab, der Händler nimmt es an, meist mit der
   Auftragsbestätigung, nicht mit der automatischen Eingangsbestätigung.
 - Der Kaufvertrag ist vom **Erfüllungsgeschäft** zu trennen: der Vertrag begründet die
   Pflicht, die Übergabe erfüllt sie (Abstraktionsprinzip).
@@ -161,7 +161,7 @@ Wichtige Abgrenzungen für die Prüfung:
 
 In dieser Reihenfolge:
 
-1. **Nacherfüllung** — der Käufer wählt zwischen Nachbesserung (Reparatur) und
+1. **Nacherfüllung**: der Käufer wählt zwischen Nachbesserung (Reparatur) und
    Nachlieferung (Ersatz). Der Verkäufer hat zuerst die Gelegenheit dazu.
 2. Erst wenn die Nacherfüllung fehlschlägt, verweigert wird oder unzumutbar ist:
    - **Minderung** des Kaufpreises, oder
@@ -188,7 +188,7 @@ freiwillige zusätzliche Zusage des Herstellers oder Verkäufers.
 | **GmbH** | beschränkt auf das Gesellschaftsvermögen | 25.000 €, davon mindestens 12.500 € eingezahlt |
 | **AG** | beschränkt auf das Gesellschaftsvermögen | 50.000 € |
 
-Die entscheidende Trennlinie verläuft zwischen **Personengesellschaften** — Einzelunternehmen, GbR, OHG, KG — mit persönlicher Haftung und **Kapitalgesellschaften** — GmbH, UG, AG — als eigene juristische Personen.
+Die entscheidende Trennlinie verläuft zwischen **Personengesellschaften** (Einzelunternehmen, GbR, OHG, KG) mit persönlicher Haftung und **Kapitalgesellschaften** (GmbH, UG, AG) als eigene juristische Personen.
 
 Sonderfall KG: Der Komplementär haftet unbeschränkt, der Kommanditist nur mit seiner Einlage. Die UG ist keine eigene Rechtsform, sondern eine GmbH ab einem Euro Startkapital, die ein Viertel ihres Jahresüberschusses zurücklegen muss.
 
@@ -199,7 +199,7 @@ Sonderfall KG: Der Komplementär haftet unbeschränkt, der Kommanditist nur mit 
 <details markdown="1">
 <summary>Antwort</summary>
 
-Das Gesetz zur Modernisierung des Personengesellschaftsrechts ist in Kraft getreten — ohne Übergangsfrist und auch für bestehende Gesellschaften.
+Das Gesetz zur Modernisierung des Personengesellschaftsrechts ist in Kraft getreten, ohne Übergangsfrist und auch für bestehende Gesellschaften.
 
 Zwei Punkte daraus:
 

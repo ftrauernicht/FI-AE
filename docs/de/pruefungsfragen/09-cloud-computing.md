@@ -31,10 +31,10 @@
 | Server, Netz, Rechenzentrum | Kunde | **Anbieter** | **Anbieter** | **Anbieter** |
 
 Von links nach rechts wandert Verantwortung zum Anbieter. Die **Daten** bleiben in jedem
-Modell beim Kunden — das ist die Zeile, die in Prüfungsfragen zum Datenschutz zählt.
+Modell beim Kunden. Das ist die Zeile, die in Prüfungsfragen zum Datenschutz zählt.
 
-Beispiele: IaaS — virtuelle Maschine bei AWS EC2. PaaS — Azure App Service, Heroku.
-SaaS — Microsoft 365, Salesforce.
+Beispiele: IaaS ist eine virtuelle Maschine bei AWS EC2. PaaS ist Azure App Service oder Heroku.
+SaaS ist Microsoft 365 oder Salesforce.
 
 </details>
 
@@ -117,7 +117,7 @@ intern, Lastspitzen wandern in die Public Cloud.
 - **Auftragsverarbeitungsvertrag** nach Art. 28 DSGVO ist Pflicht, sobald der Anbieter
   personenbezogene Daten verarbeitet
 - **Ort der Verarbeitung**: innerhalb der EU beziehungsweise des EWR unproblematisch. Bei
-  Drittländern braucht es eine Rechtsgrundlage — Angemessenheitsbeschluss oder
+  Drittländern braucht es eine Rechtsgrundlage: Angemessenheitsbeschluss oder
   Standardvertragsklauseln plus Prüfung des Einzelfalls
 - **Unterauftragnehmer** müssen benannt und genehmigt sein
 - **Löschung und Rückgabe** der Daten am Vertragsende, nachweisbar
@@ -164,6 +164,6 @@ Anwendungen.
 
 Prüfungsrelevant, weil daraus die häufigste Ursache von Cloud-Vorfällen folgt: ein
 falsch konfigurierter Speicherbereich, öffentlich erreichbar. Das ist kein Versagen des
-Anbieters — es fällt in die Verantwortung des Kunden.
+Anbieters. Es fällt in die Verantwortung des Kunden.
 
 </details>
