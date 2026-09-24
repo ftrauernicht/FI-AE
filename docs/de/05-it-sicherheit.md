@@ -415,7 +415,7 @@ Der Angreifer klinkt sich in die Verbindung zwischen zwei Partnern ein und gibt 
 
 Typische Wege dorthin sind ein gefälschter WLAN-Zugangspunkt, ARP-Spoofing im lokalen Netz oder ein manipulierter DNS-Eintrag.
 
-Gegenmaßnahmen: durchgängige Verschlüsselung mit TLS, Prüfung des Zertifikats gegen eine vertrauenswürdige Stelle, HSTS, Zertifikatsanheftung. Entscheidend ist nicht die Verschlüsselung allein, sondern die **Authentizität des Gegenübers** — eine verschlüsselte Verbindung zum Angreifer nützt nichts.
+Gegenmaßnahmen: durchgängige Verschlüsselung mit TLS, Prüfung des Zertifikats gegen eine vertrauenswürdige Stelle, HSTS, Zertifikatsanheftung. Entscheidend ist die **Authentizität des Gegenübers**, nicht die Verschlüsselung allein: Eine verschlüsselte Verbindung zum Angreifer nützt nichts.
 
 ### SQL-Injection
 
@@ -431,7 +431,7 @@ SELECT * FROM Benutzer WHERE Name = '' OR '1'='1';
 
 Gegenmaßnahmen, in dieser Reihenfolge:
 
-1. **Vorbereitete Anweisungen mit Platzhaltern** (Prepared Statements). Der Datenbankserver kennt die Struktur der Anweisung, bevor er die Daten sieht — eine Eingabe kann sie danach nicht mehr verändern.
+1. **Vorbereitete Anweisungen mit Platzhaltern** (Prepared Statements). Der Datenbankserver kennt die Struktur der Anweisung, bevor er die Daten sieht. Eine Eingabe kann sie danach nicht mehr verändern.
 2. Eingaben gegen eine Positivliste prüfen, nicht gegen eine Liste verbotener Zeichen.
 3. Für die Anwendung ein Datenbankkonto mit möglichst wenigen Rechten verwenden.
 4. Fehlermeldungen der Datenbank nicht an den Nutzer durchreichen.
@@ -442,13 +442,13 @@ Maskieren von Sonderzeichen allein genügt nicht: Es ist eine Notlösung und je 
 
 Der Angreifer bringt fremden Skriptcode in eine Seite, die andere Nutzer aufrufen. Das Skript läuft dann im Browser des Opfers mit den Rechten der angegriffenen Seite und kann etwa das Sitzungsmerkmal auslesen.[^12]
 
-Unterschieden werden die gespeicherte Variante — der Code steht dauerhaft in der Datenbank, etwa in einem Kommentar — und die reflektierte, bei der er über einen präparierten Link in die Antwort gelangt.
+Unterschieden werden die gespeicherte Variante (der Code steht dauerhaft in der Datenbank, etwa in einem Kommentar) und die reflektierte, bei der er über einen präparierten Link in die Antwort gelangt.
 
 Gegenmaßnahmen: Ausgaben kontextgerecht maskieren, eine Content Security Policy setzen, Sitzungsmerkmale mit dem Kennzeichen `HttpOnly` versehen.
 
 ### Cross-Site-Request-Forgery
 
-Das Opfer ist bei einer Anwendung angemeldet und ruft nebenbei eine fremde Seite auf. Diese schickt in seinem Namen eine Anfrage an die Anwendung — der Browser hängt das gültige Sitzungsmerkmal automatisch an.[^13]
+Das Opfer ist bei einer Anwendung angemeldet und ruft nebenbei eine fremde Seite auf. Diese schickt in seinem Namen eine Anfrage an die Anwendung; der Browser hängt das gültige Sitzungsmerkmal automatisch an.[^13]
 
 Gegenmaßnahmen: ein zufälliges Merkmal je Formular, das der Server wiedererkennt, das Kennzeichen `SameSite` am Sitzungsmerkmal, und für ändernde Vorgänge grundsätzlich POST statt GET.
 
@@ -464,7 +464,7 @@ Gegenmaßnahmen: Begrenzung der Anfragerate, Filter beim Netzbetreiber, Ausliefe
 
 Der Angriff richtet sich nicht gegen die Technik, sondern gegen den Menschen: eine gefälschte Nachricht der Geschäftsführung, ein angeblicher Anruf der IT-Abteilung, ein Besucher mit Paket und freundlichem Lächeln.[^15]
 
-Gegenmaßnahmen sind entsprechend organisatorisch: Schulung, ein festgelegter Rückrufweg bei Zahlungsanweisungen, das Vier-Augen-Prinzip — und technisch die Zwei-Faktor-Authentifizierung, die ein erbeutetes Kennwort allein wertlos macht.
+Die Gegenmaßnahmen sind organisatorisch (Schulung, ein festgelegter Rückrufweg bei Zahlungsanweisungen, das Vier-Augen-Prinzip) und technisch: die Zwei-Faktor-Authentifizierung, die ein erbeutetes Kennwort allein wertlos macht.
 
 ### Die Angriffe im Überblick
 
@@ -487,7 +487,7 @@ Der Kern ist ein vertrauenswürdiger Dritter, das **Key Distribution Center**. E
 2. Mit diesem Ticket fordert er beim Ticket-Dienst ein Ticket für einen bestimmten Dienst an.
 3. Dieses Dienst-Ticket legt er dem Dienst vor. Der prüft es, ohne beim KDC nachzufragen.
 
-Zwei Eigenschaften sind dabei wesentlich. Das **Kennwort wird nie über das Netz übertragen** — es dient nur zur Entschlüsselung der Antwort des KDC. Und Tickets sind zeitlich begrenzt, weshalb die Uhren aller Beteiligten übereinstimmen müssen; eine Abweichung von wenigen Minuten lässt die Anmeldung scheitern.
+Zwei Eigenschaften sind dabei wesentlich. Das **Kennwort wird nie über das Netz übertragen**; es dient nur zur Entschlüsselung der Antwort des KDC. Und Tickets sind zeitlich begrenzt, weshalb die Uhren aller Beteiligten übereinstimmen müssen; eine Abweichung von wenigen Minuten lässt die Anmeldung scheitern.
 
 Der Vorteil ist die einmalige Anmeldung für viele Dienste, der Nachteil die zentrale Abhängigkeit: Fällt das KDC aus, meldet sich niemand mehr an.
 

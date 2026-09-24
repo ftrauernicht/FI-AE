@@ -168,7 +168,7 @@ The ITIL framework aims to improve the delivery of IT processes to support multi
 
 ### ISO 20000
 
-Leveraging the principles of the ITIL framework but not having a public relationship with it.
+It draws on the principles of the ITIL framework but has no public relationship to it.
 
 &nbsp;
 
@@ -186,7 +186,7 @@ FitSM is a standard for lightweight service management and additionally includes
 
 ### DevOps
 
-DevOps utilizes the methodology of cross-functional teams encouraged by open communication. The DevOps framework combines a disjointed set of principles that are connected based on the business requirements of the company.
+DevOps uses the methodology of cross-functional teams encouraged by open communication. The DevOps framework combines a disjointed set of principles that are connected based on the business requirements of the company.
 
 &nbsp;
 

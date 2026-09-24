@@ -414,7 +414,7 @@ The attacker inserts themselves into the connection between two parties and pret
 
 Typical routes in are a fake wireless access point, ARP spoofing on the local network, or a manipulated DNS record.
 
-Countermeasures: end-to-end encryption with TLS, checking the certificate against a trusted authority, HSTS, certificate pinning. What matters is not the encryption alone but the **authenticity of the other end** — an encrypted connection to the attacker is worth nothing.
+Countermeasures: end-to-end encryption with TLS, checking the certificate against a trusted authority, HSTS, certificate pinning. What matters is the **authenticity of the other end**, not the encryption alone: an encrypted connection to the attacker is worth nothing.
 
 ### SQL injection
 
@@ -430,7 +430,7 @@ SELECT * FROM users WHERE name = '' OR '1'='1';
 
 Countermeasures, in this order:
 
-1. **Prepared statements with placeholders.** The database server knows the structure of the statement before it sees the data — input can no longer change it.
+1. **Prepared statements with placeholders.** The database server knows the structure of the statement before it sees the data. Input can no longer change it.
 2. Validate input against an allow-list, not against a list of forbidden characters.
 3. Give the application a database account with as few privileges as possible.
 4. Never pass database error messages through to the user.
@@ -441,13 +441,13 @@ Escaping special characters alone is not enough: it is a stopgap and can be circ
 
 The attacker gets foreign script code into a page that other users open. The script then runs in the victim's browser with the privileges of the attacked site and can, for instance, read the session cookie.[^12]
 
-A distinction is drawn between the stored variant — the code sits permanently in the database, in a comment for example — and the reflected one, where it arrives in the response through a prepared link.
+A distinction is drawn between the stored variant (the code sits permanently in the database, in a comment for example) and the reflected one, where it arrives in the response through a prepared link.
 
 Countermeasures: escape output according to its context, set a content security policy, mark session cookies `HttpOnly`.
 
 ### Cross-site request forgery
 
-The victim is logged in to an application and opens another site on the side. That site sends a request to the application in their name — the browser attaches the valid session cookie automatically.[^13]
+The victim is logged in to an application and opens another site on the side. That site sends a request to the application in their name; the browser attaches the valid session cookie automatically.[^13]
 
 Countermeasures: a random token per form that the server recognises, the `SameSite` attribute on the session cookie, and POST rather than GET for anything that changes state.
 
@@ -463,7 +463,7 @@ Countermeasures: rate limiting, filtering at the network provider, delivery thro
 
 This attack does not target the technology but the person: a forged message from management, a supposed call from the IT department, a visitor with a parcel and a friendly smile.[^15]
 
-The countermeasures are correspondingly organisational: training, a fixed call-back procedure for payment instructions, the four-eyes principle — and technically, two-factor authentication, which renders a stolen password useless on its own.
+The countermeasures are organisational (training, a fixed call-back procedure for payment instructions, the four-eyes principle) and technical: two-factor authentication, which renders a stolen password useless on its own.
 
 ### The attacks at a glance
 
@@ -486,7 +486,7 @@ At its core is a trusted third party, the **key distribution centre**, made up o
 2. With that ticket they request a ticket for a particular service from the ticket-granting service.
 3. They present that service ticket to the service, which verifies it without asking the KDC.
 
-Two properties are essential here. The **password is never sent across the network** — it is only used to decrypt the KDC's answer. And tickets are time-limited, which is why the clocks of all parties have to agree; a difference of a few minutes makes the login fail.
+Two properties are essential here. The **password is never sent across the network**; it is only used to decrypt the KDC's answer. And tickets are time-limited, which is why the clocks of all parties have to agree; a difference of a few minutes makes the login fail.
 
 The benefit is a single sign-on for many services, the drawback is the central dependency: if the KDC is down, nobody logs in.
 
