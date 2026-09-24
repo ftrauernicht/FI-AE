@@ -61,18 +61,18 @@ Die Wahl der Rechtsform entscheidet über drei Dinge: wer für Schulden haftet, 
 | **UG (haftungsbeschränkt)** | ab 1 | beschränkt auf das Gesellschaftsvermögen | ab 1 € | Handelsregister B |
 | **AG** | ab 1 | beschränkt auf das Gesellschaftsvermögen | 50.000 € | Handelsregister B |
 
-Die grundlegende Unterscheidung verläuft zwischen **Personengesellschaften** und **Kapitalgesellschaften**. Bei Personengesellschaften — GbR, OHG, KG — stehen die Gesellschafter persönlich ein und führen die Geschäfte selbst; dafür ist die Gründung formlos und billig. Kapitalgesellschaften — GmbH, UG, AG — sind eigene juristische Personen; die Haftung endet am Gesellschaftsvermögen, dafür braucht es Kapital, einen Notar und eine ordentliche Buchführung.
+Die grundlegende Unterscheidung verläuft zwischen **Personengesellschaften** und **Kapitalgesellschaften**. Bei Personengesellschaften (GbR, OHG, KG) stehen die Gesellschafter persönlich ein und führen die Geschäfte selbst; dafür ist die Gründung formlos und billig. Kapitalgesellschaften (GmbH, UG, AG) sind eigene juristische Personen; die Haftung endet am Gesellschaftsvermögen, dafür braucht es Kapital, einen Notar und eine ordentliche Buchführung.
 
 Die UG ist keine eigene Rechtsform, sondern eine GmbH mit geringerem Startkapital. Sie muss ein Viertel ihres Jahresüberschusses als Rücklage einbehalten, bis das Stammkapital einer GmbH erreicht ist.
 
 ### Was sich 2024 geändert hat
 
-Zum 1. Januar 2024 ist das Gesetz zur Modernisierung des Personengesellschaftsrechts in Kraft getreten — ohne Übergangsfrist und auch für bestehende Gesellschaften.[^2]
+Zum 1. Januar 2024 ist das Gesetz zur Modernisierung des Personengesellschaftsrechts in Kraft getreten, ohne Übergangsfrist und auch für bestehende Gesellschaften.[^2]
 
 Zwei Punkte daraus sind für die Praxis wesentlich:
 
 - Die **Rechtsfähigkeit der GbR** steht jetzt im Gesetz. Sie kann als solche Verträge schließen, Eigentum halten und klagen; bis dahin folgte das nur aus der Rechtsprechung.
-- Es gibt ein **Gesellschaftsregister**. Trägt sich eine GbR dort ein, führt sie den Zusatz **eGbR**. Die Eintragung ist grundsätzlich freiwillig, wird aber faktisch zur Pflicht, sobald die Gesellschaft Grundstücke oder Anteile erwerben will — ohne Eintragung geht keine Änderung im Grundbuch.
+- Es gibt ein **Gesellschaftsregister**. Trägt sich eine GbR dort ein, führt sie den Zusatz **eGbR**. Die Eintragung ist grundsätzlich freiwillig, wird aber faktisch zur Pflicht, sobald die Gesellschaft Grundstücke oder Anteile erwerben will. Ohne Eintragung geht keine Änderung im Grundbuch.
 
 ## Marktformen
 
@@ -86,20 +86,20 @@ Welche Marktform vorliegt, ergibt sich aus der Zahl der Anbieter und der Zahl de
 
 Die drei Fälle, nach denen üblicherweise gefragt wird:
 
-- **Monopol** — ein Anbieter, viele Nachfrager. Der Anbieter setzt den Preis; ohne Regulierung gibt es keine Grenze nach oben außer der Zahlungsbereitschaft.
-- **Oligopol** — wenige Anbieter, viele Nachfrager. Jeder Anbieter muss die Reaktion der anderen einkalkulieren, was zu Preisstarre oder zu Preiskämpfen führt.
-- **Polypol** — viele auf beiden Seiten. Der einzelne Anbieter hat keinen Einfluss auf den Preis, er kann ihn nur hinnehmen.
+- **Monopol**: ein Anbieter, viele Nachfrager. Der Anbieter setzt den Preis; ohne Regulierung gibt es keine Grenze nach oben außer der Zahlungsbereitschaft.
+- **Oligopol**: wenige Anbieter, viele Nachfrager. Jeder Anbieter muss die Reaktion der anderen einkalkulieren, was zu Preisstarre oder zu Preiskämpfen führt.
+- **Polypol**: viele auf beiden Seiten. Der einzelne Anbieter hat keinen Einfluss auf den Preis, er kann ihn nur hinnehmen.
 
 ## Elektronische Rechnung
 
 Seit dem 1. Januar 2025 gilt in Deutschland die Pflicht zur elektronischen Rechnung im Geschäftsverkehr zwischen inländischen Unternehmen.[^4]
 
-Eine E-Rechnung im Sinne des Gesetzes ist **nicht** irgendein digitales Dokument. Sie muss in einem strukturierten elektronischen Format ausgestellt und automatisch verarbeitbar sein und der europäischen Norm EN 16931 entsprechen. Ein PDF im Anhang einer E-Mail erfüllt das nicht — es zählt seit 2025 als „sonstige Rechnung".
+Eine E-Rechnung im Sinne des Gesetzes ist **nicht** irgendein digitales Dokument. Sie muss in einem strukturierten elektronischen Format ausgestellt und automatisch verarbeitbar sein und der europäischen Norm EN 16931 entsprechen. Ein PDF im Anhang einer E-Mail erfüllt das nicht. Es zählt seit 2025 als „sonstige Rechnung".
 
 | Format | Aufbau |
 |---|---|
 | **XRechnung** | reines XML, aus der öffentlichen Beschaffung bekannt |
-| **ZUGFeRD ab 2.x** | Mischform: ein PDF, in das die XML-Daten eingebettet sind — für Menschen lesbar und für Maschinen auswertbar |
+| **ZUGFeRD ab 2.x** | Mischform: ein PDF, in das die XML-Daten eingebettet sind, für Menschen lesbar und für Maschinen auswertbar |
 
 Die Fristen sind gestaffelt:[^5]
 

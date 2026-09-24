@@ -170,7 +170,7 @@ linearSearch(array, wanted)
     return -1
 ```
 
-Effort O(n). The method requires nothing — in particular, the array does not have to be sorted.
+Effort O(n). The method requires nothing in particular; the array does not have to be sorted.
 
 ### Binary search
 
@@ -203,7 +203,7 @@ The array `[5, 2, 9, 1]` serves as the running example.
 
 ### Bubble sort
 
-Adjacent elements are compared and swapped when they are in the wrong order. After each pass the largest remaining element sits at the end — it rises like a bubble.[^7]
+Adjacent elements are compared and swapped when they are in the wrong order. After each pass the largest remaining element sits at the end. It rises like a bubble.[^7]
 
 ```text
 bubbleSort(array)
@@ -243,7 +243,7 @@ selectionSort(array)
 | 2 | 1, 2, 9, 5 | 2 is already in the right place |
 | 3 | 1, 2, 5, 9 | done |
 
-Selection sort swaps at most *n* − 1 times and therefore far less often than bubble sort. The number of **comparisons**, however, stays the same regardless — even for input that is already sorted.
+Selection sort swaps at most *n* − 1 times and therefore far less often than bubble sort. The number of **comparisons**, however, stays the same regardless, even for input that is already sorted.
 
 ### Insertion sort
 

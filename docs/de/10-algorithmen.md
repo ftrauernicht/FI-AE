@@ -172,7 +172,7 @@ lineareSuche(feld, gesucht)
     gib -1 zurück
 ```
 
-Aufwand O(n). Das Verfahren setzt nichts voraus — insbesondere muss das Feld nicht sortiert sein.
+Aufwand O(n). Das Verfahren setzt nichts voraus, insbesondere muss das Feld nicht sortiert sein.
 
 ### Binäre Suche
 
@@ -205,7 +205,7 @@ Als durchgehendes Beispiel dient das Feld `[5, 2, 9, 1]`.
 
 ### Bubblesort
 
-Benachbarte Elemente werden verglichen und getauscht, wenn sie in falscher Reihenfolge stehen. Nach jedem Durchlauf steht das größte verbleibende Element am Ende — es steigt auf wie eine Blase.[^7]
+Benachbarte Elemente werden verglichen und getauscht, wenn sie in falscher Reihenfolge stehen. Nach jedem Durchlauf steht das größte verbleibende Element am Ende. Es steigt auf wie eine Blase.[^7]
 
 ```text
 bubblesort(feld)
