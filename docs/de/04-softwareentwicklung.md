@@ -208,7 +208,7 @@ Qualität ist in der Prüfung kein Gefühl, sondern eine Liste. Maßgeblich ist 
 
 | Merkmal | Frage dahinter | Beispiel für eine Verletzung |
 |---|---|---|
-| **Funktionale Eignung** | Tut die Software, was sie soll — vollständig und richtig? | Die Rechnungssumme wird falsch gerundet |
+| **Funktionale Eignung** | Tut die Software, was sie soll, vollständig und richtig? | Die Rechnungssumme wird falsch gerundet |
 | **Leistungseffizienz** | Wie viel Zeit und wie viele Betriebsmittel braucht sie dafür? | Die Suche antwortet erst nach zwölf Sekunden |
 | **Kompatibilität** | Arbeitet sie mit anderen Systemen zusammen, ohne sie zu stören? | Der Export erzeugt eine Datei, die keine andere Anwendung lesen kann |
 | **Benutzbarkeit** | Kommen die vorgesehenen Nutzer damit zurecht? | Der Abbrechen-Knopf speichert |
@@ -217,7 +217,7 @@ Qualität ist in der Prüfung kein Gefühl, sondern eine Liste. Maßgeblich ist 
 | **Wartbarkeit** | Wie teuer ist eine Änderung? | Eine neue Steuerklasse erfordert Änderungen an neunzehn Stellen |
 | **Übertragbarkeit** | Lässt sie sich in eine andere Umgebung bringen? | Die Anwendung läuft nur mit genau dieser Datenbankversion |
 
-Die Fassung von 2023 hat das Modell überarbeitet: Benutzbarkeit heißt jetzt Interaktionsfähigkeit, Übertragbarkeit heißt Flexibilität, und Betriebssicherheit ist als neuntes Merkmal hinzugekommen — die Frage, ob das System Menschen, Sachwerte oder Umwelt gefährden kann.[^7] In Lehrbüchern und Prüfungsaufgaben findet sich bislang überwiegend die Einteilung mit acht Merkmalen.
+Die Fassung von 2023 hat das Modell überarbeitet: Benutzbarkeit heißt jetzt Interaktionsfähigkeit, Übertragbarkeit heißt Flexibilität, und Betriebssicherheit ist als neuntes Merkmal hinzugekommen: die Frage, ob das System Menschen, Sachwerte oder Umwelt gefährden kann.[^7] In Lehrbüchern und Prüfungsaufgaben findet sich bislang überwiegend die Einteilung mit acht Merkmalen.
 
 Zwei Begriffe, die im Deutschen beide „Sicherheit" heißen und regelmäßig verwechselt werden: **Security** schützt das System vor seiner Umwelt, **Safety** die Umwelt vor dem System.
 
@@ -234,13 +234,13 @@ Die Teststufen bauen aufeinander auf, und jede gehört zu einer Stufe der Spezif
 | **Systemtest** | das vollständige System in einer produktionsnahen Umgebung | Pflichtenheft | Test oder Qualitätssicherung |
 | **Abnahmetest** | ob das System die Anforderungen des Auftraggebers erfüllt | Lastenheft, Vertrag | Auftraggeber |
 
-Je später ein Fehler auffällt, desto teurer wird seine Beseitigung — je Stufe grob um den Faktor zehn. Das ist das eigentliche Argument für automatisierte Komponententests, nicht die Zahl in der Überdeckungsstatistik.
+Je später ein Fehler auffällt, desto teurer wird seine Beseitigung: je Stufe grob um den Faktor zehn. Das ist das eigentliche Argument für automatisierte Komponententests, nicht die Zahl in der Überdeckungsstatistik.
 
 ### Black-Box- und White-Box-Test
 
 **Black Box** heißt: getestet wird gegen die Spezifikation, ohne den Quelltext zu kennen. Eingabe hinein, Ausgabe vergleichen. Die üblichen Verfahren sind Äquivalenzklassenbildung und Grenzwertanalyse.
 
-**White Box** heißt: der Quelltext ist bekannt, getestet wird gegen seine Struktur. Maß ist die Überdeckung — Anweisungs-, Zweig- oder Pfadüberdeckung.
+**White Box** heißt: der Quelltext ist bekannt, getestet wird gegen seine Struktur. Maß ist die Überdeckung: Anweisungs-, Zweig- oder Pfadüberdeckung.
 
 Die Grenzwertanalyse ist dabei das Standardverfahren: Bei einer erlaubten Menge von 1 bis 100 werden 0, 1, 100 und 101 geprüft, nicht 50. Fehler sitzen an den Rändern, weil dort die Vergleichsoperatoren stehen.
 
@@ -261,9 +261,9 @@ Gemessen werden Antwortzeit, Durchsatz und Fehlerrate. Ein Lasttest ohne vorher 
 
 Bei testgetriebener Entwicklung wird der Test vor dem Code geschrieben. Der Zyklus heißt Red-Green-Refactor:[^10]
 
-1. **Rot** — einen Test schreiben, der die gewünschte Funktion prüft. Er schlägt fehl, weil es die Funktion noch nicht gibt.
-2. **Grün** — gerade so viel Code schreiben, dass der Test durchläuft. Nicht mehr.
-3. **Refactor** — den Code aufräumen, ohne sein Verhalten zu ändern. Der eben geschriebene Test sichert das ab.
+1. **Rot**: einen Test schreiben, der die gewünschte Funktion prüft. Er schlägt fehl, weil es die Funktion noch nicht gibt.
+2. **Grün**: gerade so viel Code schreiben, dass der Test durchläuft. Nicht mehr.
+3. **Refactor**: den Code aufräumen, ohne sein Verhalten zu ändern. Der eben geschriebene Test sichert das ab.
 
 Der Nutzen liegt weniger in der Testabdeckung als im Entwurf: Wer den Aufruf zuerst schreibt, merkt sofort, wenn eine Schnittstelle unbequem zu benutzen ist.
 
@@ -295,7 +295,7 @@ Die klassische Einteilung stammt aus dem Buch der sogenannten Viererbande und ke
 
 Drei tauchen in Aufgaben besonders häufig auf:
 
-- **Singleton** stellt sicher, dass es von einer Klasse genau ein Objekt gibt — etwa für eine Konfiguration. Erkennungsmerkmal ist der private Konstruktor.
+- **Singleton** stellt sicher, dass es von einer Klasse genau ein Objekt gibt (etwa für eine Konfiguration). Erkennungsmerkmal ist der private Konstruktor.
 - **Beobachter** benachrichtigt angemeldete Objekte über eine Zustandsänderung, ohne sie im Einzelnen zu kennen. Grundlage jeder Ereignisbehandlung.
 - **Strategie** kapselt austauschbare Algorithmen hinter einer gemeinsamen Schnittstelle, zum Beispiel mehrere Verfahren zur Berechnung von Versandkosten.
 
@@ -311,11 +311,11 @@ Drei Pflichten treffen praktisch jede öffentlich erreichbare Anwendung, und all
 
 Das Telemediengesetz gibt es nicht mehr. Seit dem 14. Mai 2024 steht die Impressumspflicht in § 5 des Digitale-Dienste-Gesetzes; inhaltlich hat sich nichts geändert, nur der Begriff „Telemedien" ist durch „digitale Dienste" ersetzt worden.[^13] Wer in einer Anwendung noch „§ 5 TMG" ausgibt, zitiert eine aufgehobene Norm.
 
-Aus demselben Gesetzespaket ist das TTDSG zum TDDDG geworden — Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz. Die Einwilligung für Cookies und vergleichbare Zugriffe auf das Endgerät steht dort weiterhin in § 25.[^14]
+Aus demselben Gesetzespaket ist das TTDSG zum TDDDG geworden (Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz). Die Einwilligung für Cookies und vergleichbare Zugriffe auf das Endgerät steht dort weiterhin in § 25.[^14]
 
 ### Barrierefreiheit nach dem Barrierefreiheitsstärkungsgesetz
 
-Das Barrierefreiheitsstärkungsgesetz gilt seit dem 28. Juni 2025. Es verpflichtet unter anderem Anbieter von Dienstleistungen im elektronischen Geschäftsverkehr — Onlineshops, Buchungsstrecken, Apps —, ihr Angebot barrierefrei zu gestalten, sofern es sich an Verbraucher richtet.[^15]
+Das Barrierefreiheitsstärkungsgesetz gilt seit dem 28. Juni 2025. Es verpflichtet unter anderem Anbieter von Dienstleistungen im elektronischen Geschäftsverkehr (Onlineshops, Buchungsstrecken, Apps), ihr Angebot barrierefrei zu gestalten, sofern es sich an Verbraucher richtet.[^15]
 
 Ausgenommen sind Kleinstunternehmen mit weniger als zehn Beschäftigten und höchstens zwei Millionen Euro Jahresumsatz, allerdings nur bei Dienstleistungen und nicht bei Produkten.
 
@@ -328,7 +328,7 @@ Der technische Maßstab ist die europäische Norm EN 301 549, die für Webinhalt
 | **Verständlich** | Sprache und Verhalten müssen nachvollziehbar sein | Fehlermeldungen im Klartext, kein unerwarteter Kontextwechsel |
 | **Robust** | auch Hilfsmittel müssen den Inhalt auswerten können | gültiges HTML, sinnvolle Semantik statt bedeutungsloser Verschachtelung |
 
-Für Anwendungsentwickler ist das die Änderung mit den unmittelbarsten Folgen für den eigenen Code. Alternativtexte, Beschriftungen von Formularfeldern, Fokusreihenfolge und Kontrastwerte entscheidet niemand in der Rechtsabteilung — die entstehen beim Schreiben der Oberfläche.
+Für Anwendungsentwickler ist das die Änderung mit den unmittelbarsten Folgen für den eigenen Code. Alternativtexte, Beschriftungen von Formularfeldern, Fokusreihenfolge und Kontrastwerte entscheidet niemand in der Rechtsabteilung. Sie entstehen beim Schreiben der Oberfläche.
 
 [^1]: <https://de.wikipedia.org/wiki/HTTP-Statuscode>
 [^2]: <https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol>

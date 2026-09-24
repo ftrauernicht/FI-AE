@@ -478,7 +478,7 @@ Anwendungen sprechen nicht direkt mit einer Datenbank, sondern über einen Treib
 
 **Open Database Connectivity** ist eine sprachunabhängige, herstellerneutrale Schnittstelle. Die Anwendung spricht immer mit demselben Treibermanager; welcher Treiber dahinter steckt, entscheidet die konfigurierte Datenquelle. Ein Wechsel des Datenbanksystems ändert im Idealfall nur diese Konfiguration und nicht den Programmcode.[^5]
 
-Verbreitet ist ODBC überall dort, wo fremde Werkzeuge an eine Datenbank angebunden werden — Tabellenkalkulationen, Berichtsgeneratoren, Datenübernahmen.
+Verbreitet ist ODBC überall dort, wo fremde Werkzeuge an eine Datenbank angebunden werden: Tabellenkalkulationen, Berichtsgeneratoren, Datenübernahmen.
 
 ### JDBC
 
@@ -492,7 +492,7 @@ Beide Schnittstellen kennen **vorbereitete Anweisungen**: Die SQL-Anweisung wird
 SELECT * FROM Kunde WHERE Nachname = ?;
 ```
 
-Das ist nicht nur schneller, wenn dieselbe Anweisung oft mit unterschiedlichen Werten läuft — der Server kann den Ausführungsplan wiederverwenden. Es ist zugleich die wirksame Gegenmaßnahme gegen [SQL-Injection](05-it-sicherheit.md): Der Server kennt die Struktur der Anweisung, bevor er die Werte sieht, und ein Wert kann sie deshalb nicht mehr verändern.
+Das ist nicht nur schneller, wenn dieselbe Anweisung oft mit unterschiedlichen Werten läuft; der Server kann den Ausführungsplan wiederverwenden. Es ist zugleich die wirksame Gegenmaßnahme gegen [SQL-Injection](05-it-sicherheit.md): Der Server kennt die Struktur der Anweisung, bevor er die Werte sieht, und ein Wert kann sie deshalb nicht mehr verändern.
 
 [^1]: <https://de.wikipedia.org/wiki/Normalisierung_(Datenbank)#Normalformen>
 [^2]: <https://info-wsf.de/Normalformen/>

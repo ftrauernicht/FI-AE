@@ -148,7 +148,7 @@ In all resulting relations, all non-primary key attributes are fully functionall
 
 #### Explanation of the 3rd normal form
 
-A relation is in the third normal form if the second normal form is satisfied and there are no dependencies between non-key attributes. Such dependencies are also referred to as transitive dependencies. Furthermore, attributes that are only indirectly dependent on the primary key must be moved to a new relation. This eliminates redundant data.
+A relation is in the third normal form if the second normal form is satisfied and there are no dependencies between non-key attributes. Such dependencies are also referred to as transitive dependencies. Attributes that are only indirectly dependent on the primary key must also be moved to a new relation. This eliminates redundant data.
 
 #### Example of the 3rd normal form
 
@@ -475,7 +475,7 @@ Applications do not talk to a database directly but through a driver. The two wi
 
 **Open Database Connectivity** is a language-independent, vendor-neutral interface. The application always talks to the same driver manager; which driver sits behind it is decided by the configured data source. Changing the database system ideally changes only that configuration and not the program code.[^5]
 
-ODBC is widespread wherever third-party tools are attached to a database — spreadsheets, report generators, data migrations.
+ODBC is widespread wherever third-party tools are attached to a database: spreadsheets, report generators, data migrations.
 
 ### JDBC
 
@@ -489,7 +489,7 @@ Both interfaces support **prepared statements**: the SQL statement goes to the s
 SELECT * FROM customer WHERE surname = ?;
 ```
 
-That is not only faster when the same statement runs often with different values — the server can reuse the execution plan. It is at the same time the effective countermeasure against [SQL injection](05-it-security.md): the server knows the structure of the statement before it sees the values, so a value can no longer change it.
+That is not only faster when the same statement runs often with different values; the server can reuse the execution plan. It is at the same time the effective countermeasure against [SQL injection](05-it-security.md): the server knows the structure of the statement before it sees the values, so a value can no longer change it.
 
 [^1]: <https://de.wikipedia.org/wiki/Normalisierung_(Datenbank)#Normalformen>
 [^2]: <https://info-wsf.de/Normalformen/>

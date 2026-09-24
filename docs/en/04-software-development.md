@@ -208,7 +208,7 @@ In an examination, quality is not a feeling but a list. The reference is the pro
 
 | Characteristic | The question behind it | Example of a violation |
 |---|---|---|
-| **Functional suitability** | Does the software do what it is supposed to — completely and correctly? | The invoice total is rounded incorrectly |
+| **Functional suitability** | Does the software do what it is supposed to, completely and correctly? | The invoice total is rounded incorrectly |
 | **Performance efficiency** | How much time and how many resources does it need for that? | The search answers only after twelve seconds |
 | **Compatibility** | Does it work alongside other systems without disturbing them? | The export writes a file no other application can read |
 | **Usability** | Can the intended users cope with it? | The cancel button saves |
@@ -217,7 +217,7 @@ In an examination, quality is not a feeling but a list. The reference is the pro
 | **Maintainability** | How expensive is a change? | A new tax class needs edits in nineteen places |
 | **Portability** | Can it be moved to a different environment? | The application only runs against this exact database version |
 
-The 2023 revision reworked the model: usability is now interaction capability, portability is now flexibility, and safety has been added as a ninth characteristic — the question of whether the system can endanger people, property or the environment.[^7] Textbooks and examination tasks still mostly use the eight-characteristic model.
+The 2023 revision reworked the model: usability is now interaction capability, portability is now flexibility, and safety has been added as a ninth characteristic: the question of whether the system can endanger people, property or the environment.[^7] Textbooks and examination tasks still mostly use the eight-characteristic model.
 
 Two terms that German merges into one word and that are regularly confused: **security** protects the system from its environment, **safety** protects the environment from the system.
 
@@ -234,13 +234,13 @@ The test levels build on each other, and each belongs to a level of the specific
 | **System test** | the complete system in a production-like environment | functional specification | test or quality assurance |
 | **Acceptance test** | whether the system meets the client's requirements | requirement specification, contract | client |
 
-The later a defect surfaces, the more expensive it is to remove — roughly by a factor of ten per level. That, and not the number in the coverage report, is the real argument for automated component tests.
+The later a defect surfaces, the more expensive it is to remove: roughly by a factor of ten per level. That, and not the number in the coverage report, is the real argument for automated component tests.
 
 ### Black-box and white-box testing
 
 **Black box** means testing against the specification without knowing the source code. Feed input in, compare the output. The usual techniques are equivalence partitioning and boundary value analysis.
 
-**White box** means the source code is known and the test goes against its structure. The measure is coverage — statement, branch or path coverage.
+**White box** means the source code is known and the test goes against its structure. The measure is coverage: statement, branch or path coverage.
 
 Boundary value analysis is the standard technique for this: for a permitted quantity of 1 to 100, the values checked are 0, 1, 100 and 101, not 50. Defects sit at the edges, because that is where the comparison operators are.
 
@@ -261,9 +261,9 @@ What is measured is response time, throughput and error rate. A load test withou
 
 In test-driven development the test is written before the code. The cycle is called red-green-refactor:[^10]
 
-1. **Red** — write a test for the wanted behaviour. It fails, because the function does not exist yet.
-2. **Green** — write just enough code to make the test pass. No more.
-3. **Refactor** — tidy the code without changing its behaviour. The test just written keeps that safe.
+1. **Red**: write a test for the wanted behaviour. It fails, because the function does not exist yet.
+2. **Green**: write just enough code to make the test pass. No more.
+3. **Refactor**: tidy the code without changing its behaviour. The test just written keeps that safe.
 
 The benefit lies less in coverage than in design: writing the call first makes an awkward interface obvious immediately.
 
@@ -295,7 +295,7 @@ The classic categorisation comes from the book by the so-called Gang of Four and
 
 Three of them turn up in tasks particularly often:
 
-- **Singleton** guarantees that a class has exactly one instance — a configuration, for example. The private constructor is the giveaway.
+- **Singleton** guarantees that a class has exactly one instance (a configuration, for example). The private constructor is the giveaway.
 - **Observer** notifies registered objects about a change of state without knowing them individually. The basis of every event mechanism.
 - **Strategy** wraps interchangeable algorithms behind a common interface, for example several ways of calculating shipping costs.
 
@@ -315,7 +315,7 @@ The same legislative package renamed the TTDSG to TDDDG. Consent for cookies and
 
 ### Accessibility under the Barrierefreiheitsstärkungsgesetz
 
-The German Accessibility Strengthening Act has applied since 28 June 2025. Among others, it obliges providers of services in electronic commerce — online shops, booking flows, apps — to make their offering accessible, provided it addresses consumers.[^15]
+The German Accessibility Strengthening Act has applied since 28 June 2025. Among others, it obliges providers of services in electronic commerce (online shops, booking flows, apps) to make their offering accessible, provided it addresses consumers.[^15]
 
 Micro-enterprises with fewer than ten employees and at most two million euros of annual turnover are exempt, but only for services, not for products.
 
@@ -328,7 +328,7 @@ The technical yardstick is the European standard EN 301 549, which for web conte
 | **Understandable** | language and behaviour must be comprehensible | error messages in plain words, no unexpected change of context |
 | **Robust** | assistive technology must be able to interpret the content | valid HTML, meaningful semantics instead of meaningless nesting |
 
-For application developers this is the change with the most immediate consequences for their own code. Alternative texts, form field labels, focus order and contrast values are not decided in a legal department — they come into being while the interface is written.
+For application developers this is the change with the most immediate consequences for their own code. Alternative texts, form field labels, focus order and contrast values are not decided in a legal department. They come into being while the interface is written.
 
 [^1]: <https://de.wikipedia.org/wiki/HTTP-Statuscode>
 [^2]: <https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol>
