@@ -1,6 +1,6 @@
 # Die Abschlussprüfung im Überblick
 
-Was geprüft wird, ist an zwei Stellen festgelegt. Der Rahmen — welche Prüfungsbereiche es gibt, wie lange sie dauern, wie sie zählen — steht in der Fachinformatiker-Ausbildungsverordnung und ist damit geltendes Recht. Die fachlichen Inhalte stehen in den Prüfungskatalogen der IHK-Prüfungsstellen; die werden regelmäßig überarbeitet, zuletzt für die Prüfungen ab 2025.
+Was geprüft wird, ist an zwei Stellen festgelegt. Der Rahmen, also welche Prüfungsbereiche es gibt, wie lange sie dauern und wie sie zählen, steht in der Fachinformatiker-Ausbildungsverordnung und ist damit geltendes Recht. Die fachlichen Inhalte stehen in den Prüfungskatalogen der IHK-Prüfungsstellen; die werden regelmäßig überarbeitet, zuletzt für die Prüfungen ab 2025.
 
 Diese Seite hält beides fest und nennt den Stand, gegen den diese Sammlung geschrieben ist.
 
@@ -16,7 +16,7 @@ Diese Seite hält beides fest und nennt den Stand, gegen den diese Sammlung gesc
 
 ## Zwei Teile, eine Note
 
-Die Ausbildung endet mit einer *gestreckten* Abschlussprüfung. Teil 1 wird nach etwa der Hälfte der Ausbildungszeit geschrieben und zählt bereits zur Endnote — eine gesonderte Zwischenprüfung gibt es nicht.[^1]
+Die Ausbildung endet mit einer *gestreckten* Abschlussprüfung. Teil 1 wird nach etwa der Hälfte der Ausbildungszeit geschrieben und zählt bereits zur Endnote; eine gesonderte Zwischenprüfung gibt es nicht.[^1]
 
 | Prüfungsbereich | Teil | Form | Dauer | Gewicht |
 |---|---|---|---|---|
@@ -26,7 +26,7 @@ Die Ausbildung endet mit einer *gestreckten* Abschlussprüfung. Teil 1 wird nach
 | Entwicklung und Umsetzung von Algorithmen | 2 | schriftlich | 90 Minuten | 10 % |
 | Wirtschafts- und Sozialkunde | 2 | schriftlich | 60 Minuten | 10 % |
 
-Innerhalb der Projektarbeit zählen der schriftliche Teil — Durchführung und Dokumentation — und der mündliche Teil aus Präsentation und Fachgespräch je zur Hälfte. Die Präsentation darf dabei höchstens 15 der 30 Minuten in Anspruch nehmen.[^2]
+Innerhalb der Projektarbeit zählen der schriftliche Teil (Durchführung und Dokumentation) und der mündliche Teil aus Präsentation und Fachgespräch je zur Hälfte. Die Präsentation darf dabei höchstens 15 der 30 Minuten in Anspruch nehmen.[^2]
 
 Die Rechnung geht auf: 20 + 50 + 10 + 10 + 10 = 100. Wer sich fragt, worauf sich Lernzeit am ehesten lohnt, hat die Antwort in der rechten Spalte. Die drei schriftlichen Bereiche von Teil 2 machen zusammen 30 Prozent aus, die Projektarbeit allein 50.
 
@@ -45,7 +45,7 @@ Zwei Folgerungen daraus, die regelmäßig übersehen werden: Ein sehr gutes Teil
 
 Die Verordnung beschreibt die Prüfungsbereiche nur in wenigen Sätzen. Welche Fachinhalte dahinterstehen, legen die Prüfungskataloge der IHK-Prüfungsstellen fest. Sie sind für alle IHKs bundeseinheitlich, enthalten selbst keine Aufgaben und sind über den U-Form-Verlag zu beziehen.[^4]
 
-**Maßgeblich ist die 2. überarbeitete Auflage.** Sie ist erstmals Grundlage für Teil 1 im Frühjahr 2025 und Teil 2 im Sommer 2025. Die IHK nennt als Gründe die Rückmeldungen aus den Prüfungsterminen seit der ersten Auflage von 2021 und die technische Entwicklung; außerdem trennt sie Teil 1 und Teil 2 schärfer — SQL und RAID werden jetzt ausschließlich in Teil 2 geprüft.[^5]
+**Maßgeblich ist die 2. überarbeitete Auflage.** Sie ist erstmals Grundlage für Teil 1 im Frühjahr 2025 und Teil 2 im Sommer 2025. Die IHK nennt als Gründe die Rückmeldungen aus den Prüfungsterminen seit der ersten Auflage von 2021 und die technische Entwicklung; außerdem trennt sie Teil 1 und Teil 2 schärfer: SQL und RAID werden jetzt ausschließlich in Teil 2 geprüft.[^5]
 
 ### Woher die Angaben zum Kataloginhalt stammen
 
@@ -57,7 +57,7 @@ Der folgende Abschnitt ist der einzige in dieser Sammlung, der etwas über den *
 | Belegt durch die Ausbildungsverordnung | Prüfungsbereiche, Gewichtung, Prüfungszeiten, Bestehensregel[^1] [^2] [^3] |
 | **Nicht** aus dem Katalog selbst | die Liste der einzelnen Themen unten. Sie stammt aus einer öffentlichen Durchsicht des Katalogs im IT-Berufe-Podcast[^6] |
 
-Der Katalog ist geschütztes Material der IHK-Prüfungsstellen; er wird hier weder zitiert noch nachgebildet, sondern nur in seinen Themen benannt. Wer sich darauf verlassen muss, sollte ihn beim U-Form-Verlag beziehen — er kostet rund sieben Euro — oder bei der zuständigen IHK nachfragen. **Diese Sammlung ist gegen das Original nicht abgeglichen.**
+Der Katalog ist geschütztes Material der IHK-Prüfungsstellen; er wird hier weder zitiert noch nachgebildet, sondern nur in seinen Themen benannt. Wer sich darauf verlassen muss, sollte ihn beim U-Form-Verlag beziehen (er kostet rund sieben Euro) oder bei der zuständigen IHK nachfragen. **Diese Sammlung ist gegen das Original nicht abgeglichen.**
 
 ### Was sich dieser Durchsicht zufolge geändert hat
 
@@ -65,9 +65,9 @@ Hinzugekommen sein sollen für die Fachrichtung Anwendungsentwicklung unter ande
 
 Entfallen sein sollen **Programmablaufplan und Struktogramm**; Kontrollstrukturen werden demnach über Pseudocode oder ein Aktivitätsdiagramm abgefragt.[^6]
 
-Das ist die folgenreichste Angabe in dieser Sammlung, weil sie beeinflusst, was jemand übt. Sie stützt sich auf zwei Folgen desselben Podcasts und passt zu der Ankündigung der IHK, es werde Raum für den Übergang zu neueren Methoden wie UML geschaffen[^5] — bewiesen ist sie damit nicht.
+Das ist die folgenreichste Angabe in dieser Sammlung, weil sie beeinflusst, was jemand übt. Sie stützt sich auf zwei Folgen desselben Podcasts und passt zu der Ankündigung der IHK, es werde Raum für den Übergang zu neueren Methoden wie UML geschaffen[^5]. Bewiesen ist sie damit nicht.
 
-Die Verordnung selbst verlangt in § 14 unverändert, Algorithmen „in eine Programmierlogik zu übertragen und grafisch darzustellen".[^7] Geändert hätte sich also nicht die Anforderung, sondern die Notation, in der sie erwartet wird. Beide Notationen bleiben deshalb in dieser Sammlung — als Grundlage und für den Berufsschulunterricht —, tragen aber einen Hinweis.
+Die Verordnung selbst verlangt in § 14 unverändert, Algorithmen „in eine Programmierlogik zu übertragen und grafisch darzustellen".[^7] Geändert hätte sich also nicht die Anforderung, sondern die Notation, in der sie erwartet wird. Beide Notationen bleiben deshalb in dieser Sammlung (als Grundlage und für den Berufsschulunterricht), tragen aber einen Hinweis.
 
 ## Was diese Sammlung abdeckt
 
@@ -79,7 +79,7 @@ Sie deckt die beiden schriftlichen Fachbereiche von Teil 2 ab, dazu Wirtschafts-
 | Entwicklung und Umsetzung von Algorithmen | [Algorithmen](10-algorithmen.md), [Datenbanken](03-datenbanken.md), [Diagramme](diagramme/index.md) |
 | Wirtschafts- und Sozialkunde | [Politik und Wirtschaft](08-politik-und-wirtschaft.md), [Projektmanagement](07-projektmanagement.md) |
 
-Nicht abgedeckt ist die Projektarbeit — also der Bereich mit 50 Prozent Gewicht. Wie ein Projektantrag formuliert wird, was in die Dokumentation gehört und wie eine Präsentation aufgebaut sein sollte, hängt zu stark von der zuständigen IHK und vom Ausbildungsbetrieb ab, um es hier sinnvoll allgemein zu beschreiben. Frag dort nach den Vorgaben und nach Beispielen aus früheren Jahrgängen.
+Nicht abgedeckt ist die Projektarbeit, also der Bereich mit 50 Prozent Gewicht. Wie ein Projektantrag formuliert wird, was in die Dokumentation gehört und wie eine Präsentation aufgebaut sein sollte, hängt zu stark von der zuständigen IHK und vom Ausbildungsbetrieb ab, um es hier sinnvoll allgemein zu beschreiben. Frag dort nach den Vorgaben und nach Beispielen aus früheren Jahrgängen.
 
 Ebenfalls nicht abgedeckt ist Teil 1. Die Sammlung ist auf Teil 2 zugeschnitten; das Kapitel Netzwerktechnik überschneidet sich allerdings weitgehend mit dessen Inhalten.
 
@@ -90,7 +90,7 @@ Ebenfalls nicht abgedeckt ist Teil 1. Die Sammlung ist auf Teil 2 zugeschnitten;
 | Prüfungskatalog | 2. Auflage, gültig ab Teil 1 Frühjahr 2025 und Teil 2 Sommer 2025 |
 | Rechtsstand | August 2026 |
 
-Beides veraltet, und zwar unangekündigt. Einmal im Jahr öffnet ein Workflow in diesem Repository ein Issue mit der Bitte, beide Zeilen zu prüfen — das ist kein Ersatz dafür, im Zweifel bei der eigenen IHK nachzufragen.
+Beides veraltet, und zwar unangekündigt. Einmal im Jahr öffnet ein Workflow in diesem Repository ein Issue mit der Bitte, beide Zeilen zu prüfen. Das ist kein Ersatz dafür, im Zweifel bei der eigenen IHK nachzufragen.
 
 Was seit der Fassung von 2023 an Rechtsänderungen eingearbeitet wurde, steht in den jeweiligen Kapiteln mit Datum und Beleg: das Barrierefreiheitsstärkungsgesetz und die Pflicht zur E-Rechnung, die Ablösung des Telemediengesetzes durch das Digitale-Dienste-Gesetz, das NIS-2-Umsetzungsgesetz, die EU-KI-Verordnung und die Modernisierung des Personengesellschaftsrechts.
 

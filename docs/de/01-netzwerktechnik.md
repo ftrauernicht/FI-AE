@@ -248,7 +248,7 @@ Monitoring ist die fortlaufende Überwachung von Systemen und Diensten mit dem Z
 
 Zwei Verfahren sind zu unterscheiden. Beim **aktiven** Monitoring fragt der Überwachungsserver die Systeme regelmäßig ab, etwa per SNMP oder mit einem Prüfskript. Beim **passiven** melden die Systeme selbst, etwa über Syslog oder einen Agenten.
 
-Zu einer brauchbaren Überwachung gehören Schwellenwerte mit zwei Stufen — Warnung und kritisch —, eine festgelegte Eskalation und ein Verfahren gegen Fehlalarme. Eine Überwachung, die täglich zwanzig Meldungen erzeugt, wird nach einer Woche ignoriert; damit ist sie schlechter als keine.
+Zu einer brauchbaren Überwachung gehören Schwellenwerte mit zwei Stufen (Warnung und kritisch), eine festgelegte Eskalation und ein Verfahren gegen Fehlalarme. Eine Überwachung, die täglich zwanzig Meldungen erzeugt, wird nach einer Woche ignoriert; damit ist sie schlechter als keine.
 
 Der Bezug zum IT-Service-Management: Monitoring liefert die Zahlen, mit denen sich die Einhaltung eines [Service Level Agreements](06-it-service-management.md) überhaupt erst nachweisen lässt.
 
@@ -361,7 +361,7 @@ WLAN basiert auf dem Standard IEEE 802.11 und verwendet Funkwellen, um Daten zwi
 Das Dynamic Host Configuration Protocol (DHCP) ist ein Kommunikationsprotokoll. Durch einen Server können Clients die richtige Netzwerkkonfiguration erhalten.
 DHCP ist eine Erweiterung des Bootstrap-Protokolls (BOOTP)
 
-Der feste Teil eines DHCP-Pakets ist 236 Byte lang, dazu kommen die Optionen. Die Felder im Kopf sind an 32 Bit ausgerichtet — daher stammt die verbreitete, falsche Angabe, ein DHCP-Paket sei 32 Bit lang.
+Der feste Teil eines DHCP-Pakets ist 236 Byte lang, dazu kommen die Optionen. Die Felder im Kopf sind an 32 Bit ausgerichtet. Daher stammt die verbreitete, falsche Angabe, ein DHCP-Paket sei 32 Bit lang.
 
 DHCP ist in RFC 2131 und 2132 definiert.
 

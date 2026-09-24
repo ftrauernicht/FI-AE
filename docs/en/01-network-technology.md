@@ -264,7 +264,7 @@ Observation happens on three levels:
 
 Two approaches are distinguished. In **active** monitoring the monitoring server polls the systems regularly, over SNMP or with a check script. In **passive** monitoring the systems report themselves, through syslog or an agent.
 
-Usable monitoring needs thresholds at two levels — warning and critical —, a defined escalation, and a way of dealing with false alarms. Monitoring that produces twenty alerts a day is ignored after a week, which makes it worse than none.
+Usable monitoring needs thresholds at two levels (warning and critical), a defined escalation, and a way of dealing with false alarms. Monitoring that produces twenty alerts a day is ignored after a week, which makes it worse than none.
 
 The link to IT service management: monitoring produces the numbers that make compliance with a [service level agreement](06-it-service-management.md) provable in the first place.
 
@@ -381,7 +381,7 @@ connected on a LAN. The connection is normally made over an Ethernet cable or a 
 link such as Wi-Fi.
 
 A LAN works with internal IP addresses that cannot be seen from outside the network. These
-addresses are found in every private network and can be assigned freely — see
+addresses are found in every private network and can be assigned freely. See
 [private IP addresses](#private-ip-addresses).
 
 ## WLAN (wireless local area network)
@@ -454,7 +454,7 @@ those addresses are no longer in use.
 Dynamic allocation works like automatic allocation, except that the configuration also
 sets how long a given IP address may stay with a client. When that time is up, the client
 contacts the server and asks for an extension. If it does not, the address becomes free
-and can be handed to another client — or to the same one again. This period is called the
+and can be handed to another client, or to the same one again. This period is called the
 lease time.
 
 Some configurations tie addresses to the MAC address, so that even after a long absence a

@@ -1,6 +1,6 @@
 # The final examination at a glance
 
-What gets examined is fixed in two places. The framework — which examination areas exist, how long they take, how much they count — is laid down in the German training regulation for IT specialists and is therefore binding law. The subject matter is defined in the examination catalogues issued by the chambers of commerce; those are revised regularly, most recently for the examinations from 2025 onwards.
+What gets examined is fixed in two places. The framework, that is which examination areas exist, how long they take and how much they count, is laid down in the German training regulation for IT specialists and is therefore binding law. The subject matter is defined in the examination catalogues issued by the chambers of commerce; those are revised regularly, most recently for the examinations from 2025 onwards.
 
 This page records both, and names the state this collection is written against.
 
@@ -16,7 +16,7 @@ This page records both, and names the state this collection is written against.
 
 ## Two parts, one grade
 
-The apprenticeship ends with a *split* final examination. Part 1 is written after roughly half of the training period and already counts towards the final grade — there is no separate interim examination.[^1]
+The apprenticeship ends with a *split* final examination. Part 1 is written after roughly half of the training period and already counts towards the final grade; there is no separate interim examination.[^1]
 
 | Examination area | Part | Form | Duration | Weight |
 |---|---|---|---|---|
@@ -26,7 +26,7 @@ The apprenticeship ends with a *split* final examination. Part 1 is written afte
 | Developing and implementing algorithms | 2 | written | 90 minutes | 10 % |
 | Economics and social studies | 2 | written | 60 minutes | 10 % |
 
-Within the project area, the written half — carrying out the project and documenting it — and the oral half of presentation and technical discussion count equally. The presentation may take at most 15 of the 30 minutes.[^2]
+Within the project area, the written half (carrying out the project and documenting it) and the oral half of presentation and technical discussion count equally. The presentation may take at most 15 of the 30 minutes.[^2]
 
 The arithmetic adds up: 20 + 50 + 10 + 10 + 10 = 100. Anyone wondering where study time pays off best has the answer in the right-hand column. The three written areas of Part 2 together make up 30 per cent, the project alone 50.
 
@@ -45,7 +45,7 @@ Two consequences that are regularly overlooked: an excellent Part 1 cannot rescu
 
 The regulation describes the examination areas in a few sentences only. Which subject matter sits behind them is set by the examination catalogues of the chambers of commerce. They are identical across all German chambers, contain no sample tasks themselves, and are sold through U-Form Verlag.[^4]
 
-**The authoritative version is the 2nd revised edition.** It is the basis for Part 1 in spring 2025 and Part 2 in summer 2025 for the first time. The chamber gives two reasons: feedback from the examination dates since the first edition of 2021, and technical developments. It also separates Part 1 and Part 2 more sharply — SQL and RAID are now examined exclusively in Part 2.[^5]
+**The authoritative version is the 2nd revised edition.** It is the basis for Part 1 in spring 2025 and Part 2 in summer 2025 for the first time. The chamber gives two reasons: feedback from the examination dates since the first edition of 2021, and technical developments. It also separates Part 1 and Part 2 more sharply: SQL and RAID are now examined exclusively in Part 2.[^5]
 
 ### Where the statements about the catalogue come from
 
@@ -57,7 +57,7 @@ The following section is the only one in this collection that says anything abou
 | Evidenced by the training regulation | examination areas, weighting, durations, pass rule[^1] [^2] [^3] |
 | **Not** from the catalogue itself | the list of individual topics below. It comes from a public walkthrough of the catalogue on the IT-Berufe podcast[^6] |
 
-The catalogue is protected material of the chambers' examination bodies; it is neither quoted nor reproduced here, only named by topic. Anyone who has to rely on it should obtain it from U-Form Verlag — it costs around seven euros — or ask their own chamber of commerce. **This collection has not been reconciled against the original.**
+The catalogue is protected material of the chambers' examination bodies; it is neither quoted nor reproduced here, only named by topic. Anyone who has to rely on it should obtain it from U-Form Verlag (it costs around seven euros) or ask their own chamber of commerce. **This collection has not been reconciled against the original.**
 
 ### What that walkthrough reports as changed
 
@@ -65,9 +65,9 @@ Reportedly added for the application development specialisation, among others: l
 
 Reportedly removed: **flowcharts and Nassi-Shneiderman diagrams**; control structures are said to be asked for in pseudocode or as an activity diagram instead.[^6]
 
-That is the most consequential statement in this collection, because it shapes what someone practises. It rests on two episodes of the same podcast and fits the chamber's announcement that room was made for the transition to newer methods such as UML[^5] — which does not make it proven.
+That is the most consequential statement in this collection, because it shapes what someone practises. It rests on two episodes of the same podcast and fits the chamber's announcement that room was made for the transition to newer methods such as UML[^5]. That does not make it proven.
 
-The regulation itself still requires in § 14 that algorithms be "transferred into program logic and represented graphically".[^7] What would have changed is therefore not the requirement but the notation expected for it. Both notations stay in this collection — as groundwork and for vocational school — but carry a note.
+The regulation itself still requires in § 14 that algorithms be "transferred into program logic and represented graphically".[^7] What would have changed is therefore not the requirement but the notation expected for it. Both notations stay in this collection (as groundwork and for vocational school), but carry a note.
 
 ## What this collection covers
 
@@ -79,7 +79,7 @@ It covers the two written subject areas of Part 2, plus economics and social stu
 | Developing and implementing algorithms | [Algorithms](10-algorithms.md), [Databases](03-databases.md), [Diagrams](diagrams/index.md) |
 | Economics and social studies | [Politics and economy](08-politics-and-economy.md), [Project management](07-project-management.md) |
 
-Not covered is the project work — the area carrying 50 per cent. How a project proposal is worded, what belongs in the documentation and how a presentation should be built depends too much on the responsible chamber and on the training company to describe usefully in general terms. Ask there for the requirements and for examples from earlier cohorts.
+Not covered is the project work, the area carrying 50 per cent. How a project proposal is worded, what belongs in the documentation and how a presentation should be built depends too much on the responsible chamber and on the training company to describe usefully in general terms. Ask there for the requirements and for examples from earlier cohorts.
 
 Part 1 is not covered either. The collection is cut for Part 2; the network technology chapter does overlap with it to a large extent, though.
 
@@ -90,7 +90,7 @@ Part 1 is not covered either. The collection is cut for Part 2; the network tech
 | Examination catalogue | 2nd edition, valid from Part 1 spring 2025 and Part 2 summer 2025 |
 | Legal state | August 2026 |
 
-Both go out of date, and they do so without warning. Once a year a workflow in this repository opens an issue asking for both lines to be checked — which is no substitute for asking your own chamber of commerce when in doubt.
+Both go out of date, and they do so without warning. Once a year a workflow in this repository opens an issue asking for both lines to be checked. That is no substitute for asking your own chamber of commerce when in doubt.
 
 Which legal changes have been worked in since the 2023 version is stated in the respective chapters with a date and a source: the German Accessibility Strengthening Act and the electronic invoicing obligation, the replacement of the Telemedia Act by the Digital Services Act, the NIS 2 implementation act, the EU AI Act and the modernisation of partnership law.
 
